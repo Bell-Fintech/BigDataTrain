@@ -1,0 +1,230 @@
+1.如何实现对两个整数变量的值进行互换（要求不使用第三个变量）
+
+  见ZdDayThreeTest1.java
+    class ZdDayThreeTest1{
+	public static void main(String[] args){
+		int a=10,b=20;
+		System.out.println("a="+b+";b="+a);
+	}
+     }
+
+
+2.三元运算符的格式是什么?
+  执行流程是什么?
+  
+  解答：(关系表达式)?表达式1:表达式2;
+	执行流程：
+		首先计算出关系表达式的值，看其结果是true还是false
+		如果是true则返回表达式1的值
+		如果是false则返回表达式2的值
+
+
+3.使用三元运算符完成如下练习
+	比较两个数是否相等
+	获取两个数中最大值
+	获取三个数中最大值
+
+  见ZdDayThreeTest3.java
+  class ZdDayThreeTest3{
+	public static void main(String[] args){
+		
+		//比较两个数是否相等
+		int a=10,b=20;
+		System.out.println(a==b);
+		//boolean equal=(a==b)?true:false;//开发中不建议
+		//System.out.println("equal="+equal);
+		
+		
+		//获取两个数中最大值
+		int maxTwo=a>b?a:b;
+		System.out.println("maxTwo="+maxTwo);
+		
+		//获取三个数中最大值
+		float f1=1.0f,f2=1.2f,f3=1.3f;
+		float maxThree=(maxThree=f1>f2?f1:f2)>f3?maxThree:f3;	
+		System.out.println("maxThree="+maxThree);
+		
+	}
+}
+
+
+4.流程控制语句有几种?
+   
+  解答：三种  顺序结构；选择结构；循环结构
+  
+5.if语句的格式有几种?注意事项是什么?分别在什么时候使用?
+  解答：3种
+        注意事项：
+		if后面的括号里面的值只能是true或者false
+		if语句如果没有大括号默认可以控制紧挨着的一条语句
+		有大括号就没有分号，有分号就没有大括号
+        使用：第一种：最简单一个选择；第二种：if-else；第三种：在一定范围内可以多个选择
+6.看程序写结果：请自己独立分析，先不要编译运行。
+第一题
+int x = 1,y = 1;
+
+if(x++==2 & ++y==2)
+{
+	x =7;
+}
+System.out.println("x="+x+",y="+y);  
+
+x=2 y=2//x++=1,所以为false。不会执行x=7。&与&&的区别  &不论左边的值是true还是false，右边的表达式都会执行
+
+
+---------------------------------------------------
+第二题
+int x = 1,y = 1;
+
+if(x++==2 && ++y==2)
+{
+	x =7;
+}
+System.out.println("x="+x+",y="+y);
+
+x=2 y=1//整个表达式为false，不执行x=7。因为&&短路功能，x++=1，所以为false。后面的不执行，y的值不改变。
+
+
+---------------------------------------------------
+第三题
+int x = 1,y = 1;
+
+if(x++==1 | ++y==1)
+{
+	x =7;
+}
+System.out.println("x="+x+",y="+y);
+
+x=7 y=2//整个表达式为true,执行x=7；| 不论左边的值是true还是false，右边的表达式都会执行
+
+
+---------------------------------------------------
+第四题
+int x = 1,y = 1;
+
+if(x++==1 || ++y==1)
+{
+	x =7;
+}
+System.out.println("x="+x+",y="+y);
+
+x=7 y=1//整个表达式为true,执行x=7；||短路功能，前者为true，则++y不执行，y的值不发生变化。
+
+
+---------------------------------------------------
+第五题
+boolean b = true;
+
+if(b==false) 
+	System.out.println("a");
+else if(b)
+	System.out.println("b");
+else if(!b)
+	System.out.println("c");
+else
+	System.out.println("d");
+
+
+//b  因为if()默认为true
+---------------------------------------------------
+
+8.编写代码实现如下内容：if语句实现
+考试成绩分等级。
+	90~100	A等。
+	80-89	B等。
+	70-79	C等。
+	60-69	D等。
+	60以下	E等。
+请根据给定成绩，输出对应的等级。
+		
+  见ZdDayThreeTest8.java
+import java.util.Scanner;
+class ZdDayThreeTest8{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int score=sc.nextInt();
+		if(score>100||score<0){
+			System.out.println("输入的数据有误");
+		}else if(score>=90&&score<=100){
+			System.out.println("A等");
+		}else if(score>=80&&score<90){
+			System.out.println("B等");
+		}else if(score>=70&&score<80){
+			System.out.println("C等");
+		}else if(score>=60&&score<70){
+			System.out.println("D等");
+		}else{
+			System.out.println("E等");
+		}
+		
+	}
+}
+
+
+9.根据用户键盘录入的整数值，求出对应的阶乘。列入5的阶乘就是5*4*3*2*1
+
+  见ZdDayThreeTest9.java
+import java.util.Scanner;
+class ZdDayThreeTest9{
+	public static void main(String[] args){
+		int rs=1;
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		if(num==1)
+			rs=1;
+		for(;num>0;num--){
+			rs *= num;
+		}
+		System.out.println("阶乘:"+rs);
+	}
+}
+
+
+10.根据用户键盘录入的整数值，打印对应层级的数字金字塔图案
+列入用户输入3那么打印图案如下所示：
+	  1
+	 222
+	33333
+	
+  见ZdDayThreeTest10.java
+import java.util.Scanner;
+class ZdDayThreeTest10{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		for(int i=1;i<=num;i++){
+			for(int j=0;j<(2*num-1)/2+1-i;j++){
+			System.out.print("  ");
+			}
+			for(int j=0;j<2*i-1;j++){
+			System.out.print(i);
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
+
+11.输出1-1000之内的质数，质数是大于1的自然数，质数是除了1和它自身不能被其它数整除的数。比如3就是一个质数，
+因为它只能被1和3整除，又比如4不是一个质数，因为它可以同时被1,2,4整除
+
+见ZdDayThreeTest11.java
+class ZdDayThreeTest11{
+	public static void main(String[] args){
+	    int j;
+		boolean flag;
+		  for(int i=2;i<1000;i++){
+			flag=false;
+			for(j=2;j<=Math.sqrt(i);j++){
+				if(i%j==0){
+				flag=true;
+				break;
+				}
+			}
+			if(flag==false){
+				System.out.print(i+" ");
+			}
+		  }
+	}
+}
