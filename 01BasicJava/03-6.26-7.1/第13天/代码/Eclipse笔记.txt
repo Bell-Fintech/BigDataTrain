@@ -1,0 +1,36 @@
+1.从www.eclipse.org上面下载对应位数版本的eclipse，然后直接解压到一个你自己常用的目录中，然后把eclipse.exe发送到桌面方便以后使用
+2.双击eclipse.exe打开eclipse工具
+3.新建工程：右击Project Explorer选择new，然后选择java project
+4.在src目录中新建类和包
+5.改变字体和编码以及快捷键
+	更改字体：Window->Preferences->General->Apperarance->colors and fonts->basic->text font
+	很重要的一不：更改编码为utf-8
+	Window->Preferences->General->Workspace->选择成UTF-8
+	更改快捷键：Window->Preferences->General->keys->搜索Run java Application->然后改成你自己喜欢的快捷键
+6.运行写好的类：在类窗口里面右击然后选择Run As -> java Application
+7.快捷键
+	Alt+/：代码自动补全
+	Ctrl+1：万能键
+	Ctrl+Alt+上或者下：赋值当前行
+	Ctrl+D:删除所选行
+	Alt+上或者下：移动当前行
+	Ctrl+Shift+F：快速格式化代码
+	Ctrl+M：最小化或者最大化代码窗口
+	Ctrl+W：关闭当前代码窗口
+	Ctrl+Shift+W:关闭所有的代码窗口
+	Ctrl+T：查看当前类的继承体系
+	Ctrl+O:快速查找方法
+	Ctrl按着不放+鼠标左击查看源代码
+	F3查看源代码
+	Alt+Shift+R：联动更改名字
+	Ctrl+/：注释或者取消注释
+	Ctrl+Shift+/：多行注释
+	Ctrl+Shift+\：取消多少注释
+	Alt+Shift+S：自动生成方法和代码块
+	Ctrl+Shift+O：导入需要的包，删除无用的包	
+	Shift+Enter：快速新建一行
+	Alt+Shift+M：将选中的代码封装成方法
+8.波浪线
+	黄色波浪线是警告的意思，不影响程序的运行
+	红色波浪线是错误的意思，影响程序的运行
+9.eclipse是高级开发工具集成了很多实用的快捷键和工具，可以自动检测java语法错误
