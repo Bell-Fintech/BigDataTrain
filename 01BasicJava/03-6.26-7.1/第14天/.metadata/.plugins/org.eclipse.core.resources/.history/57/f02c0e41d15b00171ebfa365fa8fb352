@@ -1,0 +1,19 @@
+package cn.edu360;
+/*
+ * 有一个区间：start-end
+ * 现在想定义一个方法获取start-end之间的随机数
+ */
+public class RandomDemo2 {
+
+	public static void main(String[] args) {
+		/*
+		 * start:2
+		 * end:100
+		 * 
+		 * (end-start)=98
+		 * start+nextInt(98+1);的取值范围：2-100
+		 * 
+		 */
+	}
+
+}

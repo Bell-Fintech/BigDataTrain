@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void formatTest()&apos; from &apos;cn.edu360.DateFormatDemo.main()&apos; to &apos;cn.edu360.DateFormatDemo&apos;&#x0D;&#x0A;- Original project: &apos;day14_日期和格式化日期&apos;&#x0D;&#x0A;- Method name: &apos;formatTest&apos;&#x0D;&#x0A;- Destination type: &apos;cn.edu360.DateFormatDemo&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;formatTest&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;cn.edu360{DateFormatDemo.java" name="formatTest" replace="false" selection="328 474" stamp="1498639540596" version="1.0" visibility="2"/>
+</session>

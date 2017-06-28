@@ -1,0 +1,27 @@
+package cn.edu360;
+
+import java.util.Random;
+
+/*
+ * public Random()创建一个新的随机数生成器。此构造方法将随机数生成器的种子设置为某个值，该值与此构造方法的所有其他调用所用的值完全不同
+ * public Random(long seed)使用单个 long 种子创建一个新的随机数生成器。该种子是伪随机数生成器的内部状态的初始值
+ */
+public class RandomDemo {
+
+	public static void main(String[] args) {
+		/*Random r = new Random();
+		System.out.println(r.nextInt());
+
+		// public Random(long seed)使用相同种子每次调用nextInt生成的随机数都一样
+		Random r2 = new Random(10);
+		Random r3 = new Random(10);
+		System.out.println(r2.nextInt());
+		System.out.println(r3.nextInt());
+		System.out.println(r2.nextInt());
+		System.out.println(r3.nextInt());*/
+		Random r = new Random();
+		//获取1-10之间的随机数
+		
+	}
+
+}

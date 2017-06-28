@@ -1,0 +1,9 @@
+package cn.edu360;
+
+public class SystemDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

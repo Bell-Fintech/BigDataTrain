@@ -1,0 +1,7 @@
+package cn.edu360;
+
+public class CharacterDemo {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,18 @@
+package cn.edu360;
+/*
+ * Math 类包含用于执行基本数学运算的方法，如初等指数、对数、平方根和三角函数。
+ * 	public static int abs(int a)
+	public static double ceil(double a)
+	public static double floor(double a)
+	public static double pow(double a,double b)
+	public static double random()
+	public static int round(float a) 
+	public static double sqrt(double a)
+ */
+public class MathDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

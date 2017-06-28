@@ -1,0 +1,11 @@
+package cn.edu360;
+/*
+ * Math 类包含用于执行基本数学运算的方法，如初等指数、对数、平方根和三角函数。
+ */
+public class MathDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

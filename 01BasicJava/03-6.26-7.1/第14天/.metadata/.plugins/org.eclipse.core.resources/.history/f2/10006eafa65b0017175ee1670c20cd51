@@ -1,0 +1,19 @@
+package cn.edu360;
+/*
+ * BigInteger可以接收超过int和long的值
+ * BigInteger的范围是多大呢？
+ * 	BigInteger内部有Integer.MAX_VALUE个数组，每个数组元素的范围是20多亿，20亿*20亿=4亿兆
+ */
+public class BigIntegerDemo {
+
+	public static void main(String[] args) {
+		
+		//int i = Integer.MAX_VALUE;
+		//System.out.println(i);//2147483647
+		//int i = 2147483648;
+		long i = 2147483648l;
+		System.out.println(Long.MAX_VALUE);//9223372036854775807
+		//i = 9223372036854775808l;
+	}
+
+}

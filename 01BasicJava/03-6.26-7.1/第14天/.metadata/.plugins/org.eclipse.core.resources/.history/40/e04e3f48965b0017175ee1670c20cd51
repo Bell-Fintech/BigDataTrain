@@ -1,0 +1,11 @@
+package cn.edu360;
+/*
+ * Arrays是针对数组进行操作的工具类，里面提供了很多方法比如：排序，查找，字符串拼接
+ */
+public class ArraysDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

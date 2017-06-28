@@ -1,0 +1,21 @@
+package cn.edu360;
+
+import java.util.Arrays;
+
+/*
+ * Arrays是针对数组进行操作的工具类，里面提供了很多方法比如：排序，查找，字符串拼接
+ * 	public static String toString(int[] a)返回指定数组内容的字符串表示形式
+	public static void sort(int[] a)对指定的 int 型数组按数字升序进行排序
+	public static int binarySearch(int[] a,int key)
+ */
+public class ArraysDemo {
+
+	public static void main(String[] args) {
+		int[] arr = {89,45,0,-10,22,1};
+		//public static String toString(int[] a)返回指定数组内容的字符串表示形式
+		//String s = Arrays.toString(arr);
+		System.out.println(Arrays.toString(arr));
+		//public static void sort(int[] a)对指定的 int 型数组按数字升序进行排序
+	}
+
+}

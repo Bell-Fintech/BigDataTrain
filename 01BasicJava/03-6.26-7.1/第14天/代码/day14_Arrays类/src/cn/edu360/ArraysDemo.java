@@ -1,0 +1,69 @@
+package cn.edu360;
+
+import java.util.Arrays;
+
+/*
+ * Arrays是针对数组进行操作的工具类，里面提供了很多方法比如：排序，查找，字符串拼接
+ * 	public static String toString(int[] a)返回指定数组内容的字符串表示形式
+	public static void sort(int[] a)对指定的 int 型数组按数字升序进行排序
+	public static int binarySearch(int[] a,int key)使用二分搜索法来搜索指定的 int 型数组，以获得指定的值
+ */
+public class ArraysDemo {
+
+	public static void main(String[] args) {
+		int[] arr = { 89, 45, 0, -10, 22, 1 };
+		// public static String toString(int[] a)返回指定数组内容的字符串表示形式
+		// String s = Arrays.toString(arr);
+		System.out.println(Arrays.toString(arr));
+		// public static void sort(int[] a)对指定的 int 型数组按数字升序进行排序
+		Arrays.sort(arr);
+		//selectSort(arr, false);
+		System.out.println(Arrays.toString(arr));
+		// public static int binarySearch(int[] a,int key)使用二分搜索法来搜索指定的 int
+		// 型数组，以获得指定的值
+		System.out.println(Arrays.binarySearch(arr, 1));
+	}
+
+	/**
+	 * 使用选择排序排序数组元素
+	 * 
+	 * @param arr
+	 *            要被排序的数组
+	 * @param asc
+	 *            如果是true就表示升序，如果是false就表示降序
+	 */
+	public static void selectSort(int[] arr, boolean asc) {
+		// 遍历的次数：数组的长度-1
+		for (int i = 0; i < arr.length - 1; i++) {
+			// 比较的次数：数组的长度-当前的遍历次数；判断后面的索引是否取到了最大索引处
+			for (int j = i + 1; j < arr.length; j++) {
+				if (!asc) {
+					if (arr[i] < arr[j]) {
+						swap(arr, i, j);
+
+					}
+				} else {
+					if (arr[i] > arr[j]) {
+						swap(arr, i, j);
+					}
+				}
+			}
+		}
+	}
+	
+	/**
+	 * 将数组中指定索引的值进行互换
+	 * 
+	 * @param arr
+	 *            数组
+	 * @param i
+	 *            索引1
+	 * @param j
+	 *            索引2
+	 */
+	private static void swap(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+}

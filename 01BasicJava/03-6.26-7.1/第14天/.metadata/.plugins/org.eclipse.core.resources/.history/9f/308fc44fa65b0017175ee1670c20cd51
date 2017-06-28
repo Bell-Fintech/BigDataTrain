@@ -1,0 +1,10 @@
+package cn.edu360;
+
+public class BigIntegerDemo {
+
+	public static void main(String[] args) {
+		
+		int i = Integer.MAX_VALUE
+	}
+
+}

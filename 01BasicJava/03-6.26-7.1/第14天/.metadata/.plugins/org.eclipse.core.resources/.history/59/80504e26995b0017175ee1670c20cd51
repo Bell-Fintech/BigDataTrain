@@ -1,0 +1,24 @@
+package cn.edu360;
+
+public class IntegerDemo2 {
+
+	public static void main(String[] args) {
+		int i = 50;
+		// 常用的基本进制转换
+		// public static String toBinaryString(int i)
+		System.out.println(Integer.toBinaryString(i));//110010
+		// public static String toOctalString(int i)
+		System.out.println(Integer.toOctalString(i));//62
+		// public static String toHexString(int i)
+		System.out.println(Integer.toHexString(i));//32
+		// 十进制到其他进制
+		// public static String toString(int i,int radix)
+		System.out.println(Integer.toString(i, 2));
+		System.out.println(Integer.toString(i, 8));
+		System.out.println(Integer.toString(i, 16));
+		// 其他进制到十进制
+		// public static int parseInt(String s,int radix)
+
+	}
+
+}

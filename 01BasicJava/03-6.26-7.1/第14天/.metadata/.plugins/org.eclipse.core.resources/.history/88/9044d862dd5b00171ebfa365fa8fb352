@@ -1,0 +1,13 @@
+package cn.edu360;
+/*
+ * 使用 DateFormat 类来格式化和解析日期字符串
+ * SimpleDateFormat 使得可以选择任何用户定义的日期-时间格式的模式
+ * 
+ */
+public class DateFormatDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package cn.edu360;
+/*
+ * 基本类型包装类可以提供引用类型和基本类型之间转换的很多方法
+ * 每一个基本数据类型都有它对应的包装类
+ * byte		Byte
+ * char 	Character
+ * short 	Short
+ * int		Integer
+ * long 	Long
+ * float	Float
+ * double 	Double
+ * boolean 	Boolean
+ * 
+ * Integer：Integer 类在对象中包装了一个基本类型 int 的值
+ * 	Integer最常用的场景：int-String之间做转换
+ */
+public class IntegerDemo {
+
+	public static void main(String[] args) {
+		String s = "123";
+		int i = Integer.parseInt(s);
+		System.out.println(i+"");
+	}
+}
