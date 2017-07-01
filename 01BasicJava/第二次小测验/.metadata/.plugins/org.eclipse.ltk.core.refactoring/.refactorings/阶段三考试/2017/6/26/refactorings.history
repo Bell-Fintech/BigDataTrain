@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static double [] StringToDoubleArray(StringBuilder sb)&apos; from &apos;cn.edu360.Test3.main()&apos; to &apos;cn.edu360.Test3&apos;&#x0D;&#x0A;- Original project: &apos;阶段三考试&apos;&#x0D;&#x0A;- Method name: &apos;StringToDoubleArray&apos;&#x0D;&#x0A;- Destination type: &apos;cn.edu360.Test3&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;StringToDoubleArray&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;cn.edu360{Test3.java" name="StringToDoubleArray" replace="false" selection="744 281" stamp="1498788440539" version="1.0" visibility="2"/>
+</session>

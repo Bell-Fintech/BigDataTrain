@@ -1,0 +1,10 @@
+package cn.edu360;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		//3.请将下面字符串中的数字字符串截取出来，然后再降序排序输出
+		wo shi 123.123 haha +551 hehe 101 -100 xi20xi houhou 89 23
+	}
+
+}

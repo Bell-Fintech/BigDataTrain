@@ -1,0 +1,22 @@
+package cn.edu360;
+
+/*
+ * 1.现在需要保存10个学员的信息，需要保存的信息有姓名，年龄，性别，地址属性以及吃饭，睡觉，学习等行为；
+ * 请设计一个程序存储10名学员的信息，然后遍历打印每名学员的信息
+ */
+public class Test {
+	public static void main(String[] args) {
+		Student[] students = new Student[10];
+		students[0] = new Student(name, age, sex);
+		students[1] = new Student(name, age, sex);
+		students[2] = new Student(name, age, sex);
+		students[3] = new Student(name, age, sex);
+		students[4] = new Student(name, age, sex);
+		students[5] = new Student(name, age, sex);
+		students[6] = new Student(name, age, sex);
+		students[7] = new Student(name, age, sex);
+		students[8] = new Student(name, age, sex);
+		students[9] = new Student(name, age, sex);
+	}
+
+}

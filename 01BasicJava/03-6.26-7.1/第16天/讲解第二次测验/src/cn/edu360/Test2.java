@@ -1,0 +1,38 @@
+package cn.edu360;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		//通过InnerClass.show调用的方法肯定是一个静态的方法
+		//返回值可以调用test方法，test方法是Inter的抽象方法，所以show方法的返回值类型是Inter类型
+		//test方法的返回值又可以调用show方法，所以test方法的返回值类型肯定是Demo类型
+		//所以"小牛学堂"肯定是在show方法里面输出的
+		InnerClass.show().test().show();
+	}
+}
+
+abstract class Demo {
+	public abstract void show();
+}
+
+interface Inter {
+	Demo test();
+}
+
+class InnerClass {
+	// 补齐代码
+	public static Inter	show(){
+		return new Inter(){
+			@Override
+			public Demo test() {
+				return new Demo(){
+					@Override
+					public void show() {
+						System.out.println("小牛学堂");
+					}
+				};
+			}
+			
+		};
+	}
+}

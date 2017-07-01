@@ -1,0 +1,51 @@
+package cn.edu360;
+
+public class Student {
+	private String name;
+	private int age;
+	private char sex;
+	public Student() {
+	}
+	public Student(String name, int age, char sex) {
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+	public final String getName() {
+		return name;
+	}
+	/**
+	 * 只需要传入食物的名字
+	 * @param food	食物的名字
+	 */
+	public void eat(String food){
+		System.out.println(name+"吃"+food);
+	}
+	/**
+	 * 只需要传入睡觉的毫秒值
+	 * @param time	睡觉的毫秒值
+	 */
+	public void sleep(long time){
+		System.out.println(name+"睡"+time/1000/60/60+"小时");
+	}
+	
+	public final void setName(String name) {
+		this.name = name;
+	}
+	public final int getAge() {
+		return age;
+	}
+	public final void setAge(int age) {
+		this.age = age;
+	}
+	public final char getSex() {
+		return sex;
+	}
+	public final void setSex(char sex) {
+		this.sex = sex;
+	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", sex=" + sex + "]";
+	}
+}

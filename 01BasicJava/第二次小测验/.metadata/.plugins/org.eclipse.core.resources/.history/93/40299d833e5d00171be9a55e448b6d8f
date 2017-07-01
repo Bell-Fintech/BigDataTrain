@@ -1,0 +1,34 @@
+package cn.edu360;
+
+import java.util.Scanner;
+
+/*
+ * 6.有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中   
+	int[] arr = { 1, 5, 13, 15, 20, 88, 99, 101 };
+	int[] arr = { 101, 99, 88, 20, 15, 13, 5, 1 };
+ */
+public class Test6 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入要插入的元素值：");
+		int n = sc.nextInt();
+		int[] arr = { 1, 5, 13, 15, 20, 88, 99, 101 };
+		//新建一个数组，这个数组的长度比原数组大一个
+		int[] temp = new int[arr.length+1];
+		//表示要插入到数组中的元素还没有被插入
+		boolean flag = true;
+		for(int i=0,j=0; i<arr.length; i++,j++){//i表示arr的索引，j表示temp的索引
+			//先拿n和数组中最小的值进行比较，如果发现n比较当前值小的话就放在当前值的前面
+			//判断当前的n是否被插入到数组中了
+			if(n<arr[i] && flag){
+				//n如果已经被插入了，就将值flag改成false
+				flag = false;
+				temp[j] = n;
+				j++;
+			}
+			temp[j] = arr[i];
+		}
+		//如果flag为true的话，表明n大于原数组所有的元素，那么n应该被插入到最后一个位置
+		temp[j] = n;
+	}
+}
