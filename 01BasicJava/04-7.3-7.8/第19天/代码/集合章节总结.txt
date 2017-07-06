@@ -1,0 +1,50 @@
+为什么出现集合？
+	因为面向对象思想都是以对象的形式体现的，在开发中会经常使用对象，可能还会在多个页面之间传递对象
+	这个时候用数组就会很有局限性，数组的长度是固定的，而且针对对象的方法也有限，所以就出现了集合，
+	集合只能存储引用类型，长度是可以动态变化的，里面提供很多针对对象操作的方法
+
+1.Collection
+	单列集合
+	List：可以存储重复的元素，保证迭代的顺序
+		ArrayList：底层是数组实现，查询速度比较快，增删速度比较慢
+		LinkedList：底层是链表实现，查询速度比较慢，增删速度比较快
+	Set：不可以存储重复的元素，由哈希表结构保证的，依赖被存储元素的hashCode方法和equals方法
+		HashSet:存入的顺序和取出的顺序不能保证一致
+		LinkedHashSet:存入的顺序和取出的顺序可以保证一致
+		TreeSet:可以自动的把里面的元素按照自然排序升序，也支持用比较器改变排序的顺序
+2.Iterator
+	迭代器：可以把集合里面的元素遍历出来，在使用迭代器进行遍历的时候不能直接通过集合修改元素
+	ListIterator：是List集合特有的迭代器，里面新增了添加，删除，修改的方法
+3.Map
+	双列的集合
+	只保证键的唯一，也是通过哈希表结构保证的，也是依赖键对象的hashCode方法和equals方法
+	值可以重复
+	后来的相同的键对应的值会覆盖前面已有的键对应的值
+	HashMap：存入的顺序和取出顺序可能不一致
+	LinkedHashMap：存入的顺序和取出的顺序是一致的
+	TreeMap:自动按照自然排序对键进行排序，但是要保证键对象可以被排序，也就是说键对象必须实现Comparable接口
+4.Collections
+	集合工具类
+	sort方法，想要被sort方法排序，要排序的集合中的元素必须实现Comparable接口
+	Comparable里面有一个抽象方法也必须实现：
+		@Override
+		public int compareTo(Person o) {
+			// 升序：以姓名排序，如果姓名相同再以年龄排序
+			//this对象的成员和o对象的成员进行比较是升序
+			//return this.name.equals(o.name)?this.age-o.age:this.name.compareTo(o.name);
+			
+			// 降序：以年龄排序，如果年龄相同再以姓名排序
+			//o对象的成员和this对象的成员进行比较是降序
+			return o.age==this.age?o.name.compareTo(this.name):o.age-this.age;
+		}
+	如果对元素的默认比较顺序不满意的话，可以用比较器Comparator来重新定义排序规则：
+		Comparator<Integer> comparator = new Comparator<Integer>(){
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				//o1和o2比较是升序
+				//return o1.compareTo(o2);
+				//o2和o1比较是降序
+				return o2.compareTo(o1);
+			}
+			
+		};
