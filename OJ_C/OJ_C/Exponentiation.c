@@ -28,8 +28,7 @@ void multiply(int a[],int n){
 int main(){
     char s[6];
     int n=0;
-    //while (scanf("%s %d",s,&n)!=EOF) {
-    scanf("%s %d",s,&n);
+    while (scanf("%s %d",s,&n)!=EOF) {
         int position=0,i=0,j=0,num=0;
         for (i=0; i<strlen(s); i++) {
             if (s[i]=='.') {
@@ -66,6 +65,6 @@ int main(){
             }
         }
         printf("\n");
-    //}
+    }
     return 0;
 }
