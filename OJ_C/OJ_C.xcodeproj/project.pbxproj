@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		797B1A001F1C546B00E0845A /* Exponentiation.c in Sources */ = {isa = PBXBuildFile; fileRef = 797B19FF1F1C546B00E0845A /* Exponentiation.c */; };
-		797DEDD61F1CB24E000DF583 /* Exponent.c in Sources */ = {isa = PBXBuildFile; fileRef = 797DEDD51F1CB24E000DF583 /* Exponent.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,7 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797DEDD61F1CB24E000DF583 /* Exponent.c in Sources */,
 				797B1A001F1C546B00E0845A /* Exponentiation.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
