@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		797947D51F1F044A00DD08E6 /* oneCount.c in Sources */ = {isa = PBXBuildFile; fileRef = 797947D41F1F044A00DD08E6 /* oneCount.c */; };
+		79D039561F1F99020083A58D /* twoTentoOther.c in Sources */ = {isa = PBXBuildFile; fileRef = 79D0394E1F1F95840083A58D /* twoTentoOther.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,9 @@
 		797B19FF1F1C546B00E0845A /* Exponentiation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Exponentiation.c; sourceTree = "<group>"; };
 		797DEDD51F1CB24E000DF583 /* Exponent.c */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = sourcecode.c.c; path = Exponent.c; sourceTree = "<group>"; };
 		798B818F1F1D9C2F00E32AC5 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		79ABAF411F1F83F200CC3026 /* twoTwotoSixteen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twoTwotoSixteen.c; sourceTree = "<group>"; };
+		79D0394D1F1F95840083A58D /* twoOthertoTen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twoOthertoTen.c; sourceTree = "<group>"; };
+		79D0394E1F1F95840083A58D /* twoTentoOther.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twoTentoOther.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,9 @@
 				797947D01F1EEFE900DD08E6 /* oneArea.c */,
 				797947D21F1EF1C400DD08E6 /* oneSecret.c */,
 				797947D41F1F044A00DD08E6 /* oneCount.c */,
+				79ABAF411F1F83F200CC3026 /* twoTwotoSixteen.c */,
+				79D0394D1F1F95840083A58D /* twoOthertoTen.c */,
+				79D0394E1F1F95840083A58D /* twoTentoOther.c */,
 			);
 			path = OJ_C;
 			sourceTree = "<group>";
@@ -137,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797947D51F1F044A00DD08E6 /* oneCount.c in Sources */,
+				79D039561F1F99020083A58D /* twoTentoOther.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
