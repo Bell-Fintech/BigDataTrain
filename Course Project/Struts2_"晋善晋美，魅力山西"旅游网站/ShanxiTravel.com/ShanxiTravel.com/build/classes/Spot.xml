@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+  <constant name="struts.i18n.encoding" value="UTF-8" />
+     <constant name="struts.devMode" value="true" />
+    <package name="default"  namespace="/" extends="struts-default">
+ 	<action name="addSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="addSpot">
+ 		<param name="savePath">D:\savePath</param>
+ 		<result name="addSpotListOK"  >addSpotOk.jsp</result>
+ 		<result name="input">/addSpot.jsp</result>
+ 	</action>
+		<action name="SpotAction*"  class="com.ShanxiTravel.action.SpotAction" method="find{1}Spots">
+            <result name="SpotListOK">/showSpots.jsp</result>
+        </action>
+ 		<action name="updateSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="updateSpot">
+ 		   <param name="savePath">D:\savePath</param>
+ 	     	<result name="updateOK">/showUpdateSpotNewInfo.jsp</result>
+ 	     	<result name="input">/updateSpot.jsp</result>
+ 		</action> 
+		<action name="deleteSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="deleteSpot">
+			<result name="deleteOK">/showDeleteSpotNewInfo.jsp</result>
+		</action>
+		</package>
+</struts>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<constant name="struts.devMode" value="true" />
+    <package name="user" namespace="/" extends="struts-default">  
+     	<global-results>
+     		<result name="error">/error.jsp</result>
+     	</global-results>
+     	
+     	<action name="loginCheck" class="com.mi.action.LoginAction">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="token"></interceptor-ref>
+	            <result name="success" type="redirectAction">mainPage</result>
+	            <result name="input">/login.jsp</result>
+	            <result name="invalid.token">/login.jsp</result>
+	    </action>
+     	
+     	
+     	<action name="register" class="com.mi.action.RegistProAction">
+     			<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="token" />
+				<result name="invalid.token">/register.jsp</result>
+				<result name="error">/register.jsp</result>
+     			<result>/registerSuccess.jsp</result>
+     	</action>
+     	
+     	<action name="mainPage" class="com.mi.action.MainPageAction" >
+     		<result>/main.jsp</result>
+     	</action>
+     	
+     	<action name="registerPage">
+     		<result>/register.jsp</result>
+     	</action>
+     	
+     	<action name="loginPage">
+     		<result>/login.jsp</result>
+     	</action>
+     	
+  		<action name="logoutPage">
+     		<result>/logout.jsp</result>
+     	</action>
+     	
+     	<action name="showdetails" class="com.mi.action.ProductAction" method="findProductById">
+     		<result>/showdetails.jsp</result>
+     	</action>
+     	
+     	<action name="findCart" class="com.mi.action.CartAction" method="findCart">
+     		<result>/showcart.jsp</result>
+     		<result name="error" type="redirectAction">mainPage</result>
+     	</action>
+     	
+     	<action name="addCart" class="com.mi.action.CartAction" method="addCart">
+     		<result type="redirectAction">findCart</result>
+     	</action>
+     	
+     	 <action name="delCart" class="com.mi.action.CartAction" method="delCart">
+     		<result type="redirectAction">findCart</result>
+     	</action>
+    </package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+  			<constant name="struts.i18n.encoding" value="UTF-8" />
+    	    <constant name="struts.devMode" value="true" />
+    <package name="default"  namespace="/" extends="struts-default">
+ 			<action name="addUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="addUser">
+ 						<result name="addUserOK">/addUserOk.jsp</result>
+ 						<result name="input">/addUser.jsp</result>
+ 			</action>
+		<action name="UserAction*"  class="com.ShanxiTravel.action.ManagerUserAction" method="find{1}Users">
+            <result name="UserListOK">/showUsers.jsp</result>
+        </action>
+ 		<action name="updateUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="updateUser">
+ 	     	<result name="updateOK">/showUpdateUserNewInfo.jsp</result>
+ 	     	<result name="input">/updateUser.jsp</result>
+ 		</action> 
+		<action name="deleteUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="deleteUser">
+			<result name="deleteOK">/showDeleteUserNewInfo.jsp</result>
+		</action>
+		</package>
+</struts>

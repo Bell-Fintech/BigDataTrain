@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+    <constant name="struts.devMode" value="true"></constant>
+  
+    <package name="admin" namespace="/" extends="struts-default">
+         <interceptors>
+  	        <interceptor name="checkLogin" class="com.mi.interceptor.LoginInterceptor"/>
+	 	           <interceptor-stack name="myStack">
+	 	           <interceptor-ref name="checkLogin"></interceptor-ref>
+	 	           <interceptor-ref name="defaultStack"></interceptor-ref>
+	 	       </interceptor-stack> 
+	     </interceptors>
+	    <default-interceptor-ref name="myStack"/>  
+	    <global-results>
+	       <result name="error">/error.jsp</result>
+	       <result name="login">/manager/index.jsp</result>
+	    </global-results>
+	    
+	    <action name="login">
+			<result>/manager/index.jsp</result>
+		</action>
+	    
+	    <action name="admin">
+			<result>/manager/main.jsp</result>
+		</action>
+	    
+        <action name="Login" class="com.mi.action.AdminloginAction" method="login">
+			<result name="success" type="redirectAction">admin</result>
+			<result name="login">/manager/login.jsp</result>
+		</action>
+		<action name="showPro" class="com.mi.action.ProductAction" method="findAll">
+			<result name="success">/manager/listProduct.jsp</result>
+		</action>
+		<action name="addPro" class="com.mi.action.ProductAction" method="addProduct">
+			<result type="redirectAction" name="addOK">showPro</result>
+		</action>
+		<action name="editPro" class="com.mi.action.ProductAction" method="editProduct">
+			<result type="redirectAction" name="editOK">showPro</result>
+		</action>
+	 	<action name="editProduct" class="com.mi.action.ProductAction" method="findProductById" >
+		    <result name="success">/manager/editProduct.jsp</result>
+		</action> 
+		<action name="delPro" class="com.mi.action.ProductAction" method="delProduct">
+			<result type="redirectAction" name="delOk">showPro</result>
+		</action>
+		
+		<action name="showCom" class="com.mi.action.CommentAction" method="listComment">
+	       <result>/manager/listComment.jsp</result>
+	    </action>
+	    
+	    <action name="delCom" class="com.mi.action.CommentAction" method="delComment">
+	       <result name="delOk" type="chain">showCom</result>
+	    </action>
+	    
+	    <action name="ProductPage" class="com.mi.action.ProductAction" method="findAll">
+		   <result>/manager/listProduct.jsp</result>
+		</action>
+		
+	    <action name="showAnnounce" class="com.mi.action.AnnounceAction" method="listAnnounce">
+	       <result>/manager/listAnnounce.jsp</result>
+	    </action>
+	    <action name="addAnnounce" class="com.mi.action.AnnounceAction" method="addAnnounce">
+			<result type="redirectAction" name="addOK">showAnnounce</result>
+		</action>
+		<action name="editAnnounce" class="com.mi.action.AnnounceAction" method="updateAnnounce">
+			<result type="redirectAction" name="editOK">showAnnounce</result>
+		</action>
+		<action name="delAnnounce" class="com.mi.action.AnnounceAction" method="delAnnounce">
+			<result type="redirectAction" name="delOK">showAnnounce</result>
+		</action>
+		<action name="editAnnounceUI" class="com.mi.action.AnnounceAction" method="editAnnounceUI" >
+		    <result name="editUI">/manager/editAnnounce.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+</struts>

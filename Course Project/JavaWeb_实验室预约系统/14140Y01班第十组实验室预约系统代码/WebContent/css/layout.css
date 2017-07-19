@@ -1,0 +1,134 @@
+
+body{
+	margin:0px;
+	padding:0px;
+	font:12px Arial,ËÎÌו;
+
+	}
+	#one{
+      float:left;
+	  width:100%;
+	  height:700px;
+	  background:url(../images/2.jpg);
+	  }
+	
+#main{
+      float:left;
+	  width:100%;
+	  height:600px;
+	  background:url(../images/2.jpg);
+	  }
+	  #main .tit{
+    
+    width:100%;
+	height:25px;
+	background:url(../images/3.jpg) ;
+	}
+#container{
+          margin-left:auto;
+		  margin-right:auto;
+		  width:1320px;
+		  text-align:left;
+		  }
+#header{
+       float:left;
+       width:100%;
+	   }
+#header #logo{
+            float:left;
+			width:250px;
+			height:150px;
+			margin-right:10px;
+			background:url(../images/logo.png);
+			}
+#header #banner{
+            float:left;
+            width:1035px;
+			height:150px;
+			background:url(../images/4.jpg);
+			}
+#header #menu{
+            float:left;
+			width:100%;
+			height:30px;
+			background:url(../images/3.jpg);
+			}
+			#main  .leftbox{
+                width:1295px;
+				float:left;
+				height:600px;
+				}
+.leftbox .left{
+				float:left;
+				width:640px;
+				height:300px;
+				
+				}
+				
+.tit{
+    text-align:left;
+    width:100%;
+	height:18px;
+	background:url(../images/3.jpg) ;
+	}
+	.leftbox .right{
+				 float:right;
+				 width:650px;
+				 height:300px;
+				
+				 }
+ #menu ul{
+   
+   margin:5px;
+   padding:5px;
+   list-style-type:none;
+   float:left;
+   }
+   #menu li{
+	height:10px;
+	line-height:15px;
+	float:left;
+	width:100px;
+	text-align:center;
+	}
+#menu a{
+		color:#5B4B00;
+		}
+#sidebar a:link { 
+color:#0000c6; 
+text-decoration:underline; 
+} 
+#sidebar a:visited { 
+color:#0000c6; 
+text-decoration:none; 
+} 
+#sidebar a:hover { 
+color:#ff00ff; 
+text-decoration:none; 
+} 
+#sidebar a:active { 
+color:#6c3365; 
+text-decoration:none; 
+} 
+#header #menu .tiao{
+                    float:left;
+					width:1px;
+					height:12px;
+					overflow:hidden;
+					margin-top:4px;
+					background:#000;
+					}
+.nav{
+	 float:left;
+     width:100%;
+	 height:10px;
+	 clear:both;
+	 overflow:hidden;
+	}
+#footer{
+		float:left;
+		width:1295px;
+		height:65px;
+		background:url(../images/13.png);
+		color:white;
+		}

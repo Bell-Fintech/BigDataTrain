@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+       <package name="default"  namespace="/" extends="struts-default">
+       <action name="addCommentAction"  class="com.ShanxiTravel.action.CommentAction"  method="addComment">
+ 		<result name="addCommentListOK"  >/comment/addCommentOk.jsp</result>
+ 		<result name="input">/comment/addComment.jsp</result>
+ 	</action>
+ 	 <action name="CommentAction*"  class="com.ShanxiTravel.action.CommentAction" method="find{1}Comments">
+            <result name="CommentListOK">/comment/showComments.jsp</result>
+        </action>
+        <action name="deleteCommentAction"  class="com.ShanxiTravel.action.CommentAction"  method="deleteComment">
+			<result name="deleteOK">/comment/showDeleteCommentNewInfo.jsp</result>
+		</action>
+         <action name="addSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="addSpot">
+ 		<param name="savePath">/Users/Zd/Downloads/uploadRealFile/</param>
+ 		<result name="addSpotListOK"  >/mainspot/addSpotOk.jsp</result>
+ 		<result name="input">/mainspot/addSpot.jsp</result>
+ 	</action>
+		<action name="SpotAction*"  class="com.ShanxiTravel.action.SpotAction" method="find{1}Spots">
+            <result name="SpotListOK">/mainspot/showSpots.jsp</result>
+        </action>
+ 		<action name="updateSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="updateSpot">
+ 		   <param name="savePath">/Users/Zd/Downloads/uploadRealFile/</param>
+ 	     	<result name="updateOK">/mainspot/showUpdateSpotNewInfo.jsp</result>
+ 	     	<result name="input">/mainspot/updateSpot.jsp</result>
+ 		</action> 
+		<action name="deleteSpotAction"  class="com.ShanxiTravel.action.SpotAction"  method="deleteSpot">
+			<result name="deleteOK">/mainspot/showDeleteSpotNewInfo.jsp</result>
+		</action>
+ 			<action name="loginCheck"  class="com.ShanxiTravel.action.LoginAction" >
+ 						<result name="success">/adminLoginPage.jsp</result>
+ 						<result name="input">/login.jsp</result>
+ 						<result name="error">/login.jsp</result>
+ 						<result name="ok">/main.jsp</result>
+ 			</action>
+ 			<action name="addUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="addUser">
+ 						<result name="addUserOK">/usermanager/addUserOk.jsp</result>
+ 						<result name="input">/usermanager/addUser.jsp</result>
+ 			</action>
+ 			<action name="UserAction*"  class="com.ShanxiTravel.action.ManagerUserAction" method="find{1}Users">
+            <result name="UserListOK">/usermanager/showUsers.jsp</result>
+        </action>
+ 		<action name="updateUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="updateUser">
+ 	     	<result name="updateOK">/usermanager/showUpdateUserNewInfo.jsp</result>
+ 	     	<result name="input">/usermanager/updateUser.jsp</result>
+ 		</action> 
+		<action name="deleteUserAction"  class="com.ShanxiTravel.action.ManagerUserAction"  method="deleteUser">
+			<result name="deleteOK">/usermanager/showDeleteUserNewInfo.jsp</result>
+		</action>
+		
+		</package>
+		
+</struts>
