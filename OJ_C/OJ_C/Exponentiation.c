@@ -4,7 +4,7 @@
 //
 //  Created by ZD-Mac on 2017/7/17.
 //  Copyright © 2017年 ZD-Mac. All rights reserved.
-//
+//000.10  1         000000  1       000.00  1       .00000  0       000010  1
 
 #include <stdio.h>
 #include <string.h>
@@ -22,7 +22,7 @@ void multiply(int a[],int n){
     }
     while (carry) {
         a[i++]=carry%10;
-        printf("%d  ",a[i+1]);
+       // printf("%d  ",a[i+1]);
         carry/=10;
     }
     len=i;
@@ -54,6 +54,9 @@ int main(){
                 printf("0");//小数点和数字之间的0需要输出
             }
             j=0;
+            while (product[j]==0) {//因为是逆序存放  所以结果中数之后的0全部忽略
+                j++;
+            }
             for (i=len-1; i>=j; i--) {//小数点+0之后的数字
                 printf("%d",product[i]);
             }

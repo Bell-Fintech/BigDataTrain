@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		797B1A001F1C546B00E0845A /* Exponentiation.c in Sources */ = {isa = PBXBuildFile; fileRef = 797B19FF1F1C546B00E0845A /* Exponentiation.c */; };
+		797947D51F1F044A00DD08E6 /* oneCount.c in Sources */ = {isa = PBXBuildFile; fileRef = 797947D41F1F044A00DD08E6 /* oneCount.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +25,15 @@
 /* Begin PBXFileReference section */
 		79471D961F0087CC009CBA75 /* OJ_C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OJ_C; sourceTree = BUILT_PRODUCTS_DIR; };
 		79471D991F0087CC009CBA75 /* A+B.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "A+B.c"; sourceTree = "<group>"; };
+		797947CA1F1EE84200DD08E6 /* oneAge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneAge.c; sourceTree = "<group>"; };
+		797947CC1F1EE9CE00DD08E6 /* oneSum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneSum.c; sourceTree = "<group>"; };
+		797947CE1F1EECC200DD08E6 /* oneTwice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneTwice.c; sourceTree = "<group>"; };
+		797947D01F1EEFE900DD08E6 /* oneArea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneArea.c; sourceTree = "<group>"; };
+		797947D21F1EF1C400DD08E6 /* oneSecret.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneSecret.c; sourceTree = "<group>"; };
+		797947D41F1F044A00DD08E6 /* oneCount.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oneCount.c; sourceTree = "<group>"; };
 		797B19FF1F1C546B00E0845A /* Exponentiation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Exponentiation.c; sourceTree = "<group>"; };
 		797DEDD51F1CB24E000DF583 /* Exponent.c */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = sourcecode.c.c; path = Exponent.c; sourceTree = "<group>"; };
+		798B818F1F1D9C2F00E32AC5 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,13 @@
 				797DEDD51F1CB24E000DF583 /* Exponent.c */,
 				79471D991F0087CC009CBA75 /* A+B.c */,
 				797B19FF1F1C546B00E0845A /* Exponentiation.c */,
+				798B818F1F1D9C2F00E32AC5 /* test.c */,
+				797947CA1F1EE84200DD08E6 /* oneAge.c */,
+				797947CC1F1EE9CE00DD08E6 /* oneSum.c */,
+				797947CE1F1EECC200DD08E6 /* oneTwice.c */,
+				797947D01F1EEFE900DD08E6 /* oneArea.c */,
+				797947D21F1EF1C400DD08E6 /* oneSecret.c */,
+				797947D41F1F044A00DD08E6 /* oneCount.c */,
 			);
 			path = OJ_C;
 			sourceTree = "<group>";
@@ -123,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797B1A001F1C546B00E0845A /* Exponentiation.c in Sources */,
+				797947D51F1F044A00DD08E6 /* oneCount.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
