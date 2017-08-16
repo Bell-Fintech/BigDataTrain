@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>js数据类型</title>
+	</head>
+	<body>
+		
+	</body>
+<script>
+			/*
+			 * 原始数据类型:number string undefined null boolean
+			 * 引用数据类型:object*/
+			
+			/*Number:整数 小数 负数 NaN(not a number)*/
+			var a = 12;
+			var b = 12.0;
+			var c = -12;
+			var d = 12.00;
+			var e = new Number(13);
+			//alert(typeof(e))//object
+			//alert(typeof(a));//number
+			//alert(typeof(b));//number
+			//alert(typeof(c));//number
+			//alert(typeof(d));//number
+			
+			/*boolean*/
+			alert(NaN==NaN);//false
+			
+			/* String */
+			var  str="zd";
+			var  str1='xzh';
+			//alert(typeof(str));//string
+			//alert(typeof(str1));//string
+			var str2=str.toUpperCase();
+			//alert(str2);
+			var str3=new String("zdzd");
+			var str4=str3.toUpperCase()
+			//alert(str4)
+			//alert(str3);
+			//alert(typeof(str3));
+			
+			/*undefined-*/
+			var un;
+			//alert(un)//undefined
+			//alert(undefined==undefined)//true
+		</script>
+</html>

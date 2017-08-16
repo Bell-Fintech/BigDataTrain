@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>frame布局</title>
+	</head>
+	<frameset rows="15%,*">
+		<frame  src="top.html"/>
+		<frameset cols="20%,*">
+			<frame src="left.html"/>
+			<frame src="right.html" name="right"/>
+			<!--想在右侧显示信息 所以需要加name进行对应-->
+		</frameset>
+	</frameset>
+</html>

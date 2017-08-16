@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<button> Click Me</button>
+	<div class='test'></div>
+	</body>
+	<script src="/js/jquery-latest.js"></script>
+	<!--"//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').on('click',function(){
+				alert('hello World');
+			});
+			$('.test').hide(2000).show(2000);
+		});
+	</script>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>html+css+div</title>
+		<style>
+			.d1{
+				text-decoration:none;
+			}
+			#d2{
+				color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--logo-->
+		<div style="width: 100%; ">
+			<img id="img1" height="100%" width="100%"/>
+		</div>
+		<div style="width:100%;height: 50px;">
+			<div style="width:70%;height: 100%;float: left;">
+				<img src="../../img/head.png" width="100%" height="100%" />
+			</div>
+			<div style="width:30%;height: 100%;float: left;text-align: right;">
+				<ul style="color: blue;">
+					<li style="display: inline;"><a>登陆</a></li>
+					<li style="display: inline;"<a>注册</a></li>
+					<li style="display: inline;"><a>购物车</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear: left;"></div>
+		<!--navigation-->
+		<div  style="width:100%;height: 50px;background-color: black;float: left;">
+			<ul style="margin-left: 5px;">
+				<!--
+                	a：href 需要font调颜色字体
+                	a：无hred 直接在ul里面调颜色字体
+                -->
+				<li style="display: inline;"><a href="" class="d1"><font id="d2">首页</font></a></li>
+				<li style="display: inline;"><a href="" class="d1"><font id="d2">家用电器</font></a></li>
+				<li style="display: inline;"><a href="" class="d1"><font id="d2">服装鞋包</font></a></li>
+			</ul>
+		</div>
+		<div style="clear: left;"></div>
+		<!--register-->
+		<div style="width:100%;height: 500px;float: left;background-image: url(../../img/timg2.jpg);">
+			<div style="width:70%;height: 500px;background-image: url(../../img/timg.jpg);margin-left: 15%;">
+				<div style="width:100%;height: 300px;padding-top: 100px;">
+					<table border="1" align="center" width="600" width="300px">
+						<tr>
+							<td>
+								<form action="#" method="post">
+									<table align="center">
+										<tr>
+											<td>用户名：</td>
+											<td><input type="text" name="account" value="zd" /></td>
+										</tr>
+										<tr>
+											<td>密码：</td>
+											<td><input type="password" name="pass" /></td>
+										</tr>
+										<tr>
+											<td>性别：</td>
+											<td><input type="radio" name="man" value="nan" checked="" /><input type="radio" name="woman" value="nv" />女</td>
+										</tr>
+										<tr>
+											<td>生日：</td>
+											<td><input type="date" name="birthday" /></td>
+										</tr>
+										<tr>
+											<td>兴趣：</td>
+											<td><input type="checkbox" name="hobby" value="ball" checked="" />球类
+												<input type="checkbox" name="hobby" value="swim" checked="" />游泳</td>
+										</tr>
+										<tr>
+											<td>省份：</td>
+											<td>
+												<select name="province" multiple="multiple">
+													<option value="sx">山西省</option>
+													<option value="zj">浙江省</option>
+													<option value="bj" selected="">北京省</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="submit" value="提交" /></td>
+										</tr>
+									</table>
+								</form>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--bottom-->
+		<div style="width:100%;height: 80px;float: left;text-align: center;">
+			<a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;
+			<a href="#">联系方式</a><br /> Copy right 2017-8-14
+		</div>
+	</body>
+	<script>
+		function showAd(){
+			document.getElementById("img1").src="../../img/2.jpg"
+		}
+		function hideAd(){
+			document.getElementById("img1").src=""
+		}
+		setInterval("showAd()",3000)
+		setInterval("hideAd()",5000)
+	</script>
+</html>

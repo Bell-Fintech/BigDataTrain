@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>selector</title>
+		<style>
+			
+			#d1{
+				color: red;
+			}
+			.c1{
+				color: #0000FF;
+			}
+			font{
+				color: blueviolet;
+			}
+			input[type="text"]{
+				background-color: deeppink;
+			}
+			input,#d1{
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	描述：选择器有优先级
+        -->
+		<font id="d1">id selector</font>
+		<font class="c1">class selector</font>
+		<font class="c1">class selector</font>
+		<font >元素 selector</font>
+		<input type="text" />
+		<input type="password" />
+	</body>
+</html>

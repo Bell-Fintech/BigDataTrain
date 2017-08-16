@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="d"></div>
+	</body>
+	<script>
+			function showTime() {
+				var date = new Date()
+				var H = date.getHours()
+				var M = date.getMinutes()
+				var S = date.getSeconds()
+				H=(H<10)?"0"+H:H
+				M=(M<10)?"0"+M:M
+				S=(S<10)?"0"+S:S
+				//document.write("当前时间："+H + ":" + M + ":" + S)
+				document.getElementById("d").innerHTML="<font color='red' size='7'>当前时间:"+ H + ":" + M + ":" + S +"</font>"
+				
+			}
+			setInterval("showTime()",1000)
+		</script>
+</html>

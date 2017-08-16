@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>获取值校验</title>
+	</head>
+	<body>
+		<input type="text" id="account" name="user" value="zd" />
+	</body>
+	<script>
+		var u=document.getElementById("account").value
+		//alert(u)
+		var rex=/^[a-zA-Z]{2,6}$/
+		alert(rex.test(u))
+	</script>
+</html>
