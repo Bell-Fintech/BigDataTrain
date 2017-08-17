@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--模版：target filter-->
+    <!--块-->
+    {% block 'xzh' %}
+    {% endblock %}
+    <!--单双行间隔-->
+    {% cycle '#red' '#blue' %}
+    <h1>hello {{ name|upper }} 's html Age:{{ age | add:2}}!</h1>
+</body>
+</html>
