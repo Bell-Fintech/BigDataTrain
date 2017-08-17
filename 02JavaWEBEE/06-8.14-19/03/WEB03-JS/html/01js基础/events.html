@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件的绑定</title>
+	</head>
+	<body>
+		<button onclick="myClick()">点击一下</button><br />
+		<button ondblclick="myDblclick()">需要点击两次</button><br />
+		<button id="btn" >再次点击一下</button>
+	</body>
+	<script>
+		function myClick(){
+			alert("点击了一下")
+		}
+		function myDblclick(){
+			alert("需要点击两次")
+		}
+		//不写方法 直接调用方法
+		//document.getElementById("btn").onclick=myClick()
+		//声明匿名方法
+		document.getElementById("btn").onclick=function(){
+			alert("点击了一下")
+		}
+	</script>
+</html>

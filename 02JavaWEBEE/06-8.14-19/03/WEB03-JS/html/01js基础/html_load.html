@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//js>html>window
+			//先解析js代码 <script>写在<body>后 不可以解析
+			//加载完html后调用此方法
+			window.onload = function() {
+				//alert(document.getElementById("name").value)
+			}
+
+			function click() {
+				alert("hello")
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="name" value="zd" />
+		<button onclick="click()" value="点击"></button>
+	</body>
+
+</html>

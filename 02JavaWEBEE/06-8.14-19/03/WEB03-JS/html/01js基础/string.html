@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		/*求子字符串*/
+		var str="zdxzh"
+		var str1=new String("z")
+		var sub1=str.substr(1,2)
+		//alert(sub1)//dx
+		var sub2=str.substring(1,2)
+		//alert(sub2)//d
+		var email=new String("zd@q.com")
+		var s=email.indexOf("@")
+		//alert(s)//存在返回索引  不存在返回-1
+		
+		/*分割*/
+		var string1="abc,abc"
+		var subString=string1.split(",")
+		for (var i in subString) {
+		//	alert(subString[i])
+		}
+		
+		/*校验邮箱*/
+		var e=document.getElementById("email")
+		var value=e.value
+		//alert(value)
+		var index=value.indexOf("@")
+		if (index==-1) {
+			alert("email is not true")
+		} else{
+			alert("email is true")
+		}
+	</script>
+</html>

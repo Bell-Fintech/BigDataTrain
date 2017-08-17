@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>g隔行变色</title>
+	</head>
+	<body>
+		<table border="1" width="500px" id="table">
+			<tr>
+				<td>111</td>
+				<td>111</td>
+				<td>111</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>111</td>
+				<td>111</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>111</td>
+				<td>111</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>111</td>
+				<td>111</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>111</td>
+				<td>111</td>
+			</tr>
+		</table>
+	</body>
+	<script>
+		var table = document.getElementById("table")
+		//table.rows数组 可以使用length
+		for (var i in table.rows) {
+			if (i%2==0) {
+				table.rows[i].style.backgroundColor="red"
+			} else{
+				table.rows[i].style.backgroundColor="blue"
+			}
+		}
+	</script>
+</html>

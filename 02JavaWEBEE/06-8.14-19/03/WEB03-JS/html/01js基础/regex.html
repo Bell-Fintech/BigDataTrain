@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>正则表达式</title>
+	</head>
+	<body>
+	</body>
+	<script>
+		//声明一个字符串的标准
+		var rex=/^[a-zA-Z]{2,4}$/
+		//获取你要检验的数据
+		//var str="aA"
+		var rs=rex.test(str)
+		if (rs) {
+			alert("true")
+		} else{
+			alert("false")
+		}
+	</script>
+</html>

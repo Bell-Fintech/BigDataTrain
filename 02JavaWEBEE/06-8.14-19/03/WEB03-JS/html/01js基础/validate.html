@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>校验</title>
+	</head>
+	<body>
+		<!--表单提交 需要在form里面写-->
+		<form action="submit.html" method="post" onsubmit="return checkForm();">
+			用户名<input type="text" id="name" /><span id="msg"></span><br />
+			密码<input type="password" id="password" /><span id="msg"></span><br />
+			手机号<input type="text" id="phone" /><span id="msg"></span><br />
+			<input type="submit"  value="注册" />
+		</form>
+	</body>
+	<script>
+		//
+		function checkForm(){
+			var name=document.getElementById("name").value
+			var reg=/^[a-zA-z]{2,4}$/
+			if(!reg.test(name)){
+				alert("用户名不符合要求，错误")
+				return false//这样不提交
+			}
+			var pwd=document.getElementById("password").value
+			var reg=/^[0-9][a-zA-z]{2,4}$/
+			if(!reg.test(pwd)){
+				alert("密码不符合要求，错误")
+				return false//这样不提交
+			}
+			var phone=document.getElementById("phone").value
+			var reg=/^[1-9]{1}[0-9]{10}$/
+			if(!reg.test(phone)){
+				alert("手机号不符合要求，错误")
+				return false//这样不提交
+			}
+			
+		}
+		//绑定失去焦点的事件 id=name
+		function check(){
+			//获取输入的值
+			var value=document.getElementById("name").value
+			//定义一个正则
+			var reg=/^[a-zA-z]{2,4}$/
+			//校验
+			var rs=reg.test(value)
+			//符合标准的时候 获取span的id
+			if(rs){
+				//获取msg 添加提示信息
+				document.getElementById("msg").textContent="用户名符合要求，正确。"
+				
+			}
+			else{
+				document.getElementById("msg").innerHTML="<font color='red'>用户名不符合要求，错误。</font>"
+				
+			}
+		}
+	</script>
+</html>
