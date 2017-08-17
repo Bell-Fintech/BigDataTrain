@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片轮番</title>
+	</head>
+	<body>
+		<img src="../../img/1.jpg" id="image1" width="400px" height="400px" style="float: left;"><br /><br />
+		<button onclick="previousImg()">上一张</button>
+		<button onclick="nextImg()">下一张</button>
+	</body>
+	<script>
+		var i=2
+		function nextImg(){
+			document.getElementById("image1").src="../../img/"+i+".jpg"
+			i++
+			if (i==5) {
+				i=1
+			}
+		}
+		var j=4
+		function previousImg(){
+			document.getElementById("image1").src="../../img/"+j+".jpg"
+			j--
+			if (j==0) {
+				j=4
+			}
+		}
+	</script>
+</html>
