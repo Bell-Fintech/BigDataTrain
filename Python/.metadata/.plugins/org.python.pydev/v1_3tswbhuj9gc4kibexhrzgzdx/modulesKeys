@@ -5227,6 +5227,8 @@ venusian.tests.fixtures.two.mod2|/Library/Python/2.7/site-packages/venusian-1.0-
 venusian.tests.test_advice|/Library/Python/2.7/site-packages/venusian-1.0-py2.7.egg/venusian/tests/test_advice.py
 venusian.tests.test_venusian|/Library/Python/2.7/site-packages/venusian-1.0-py2.7.egg/venusian/tests/test_venusian.py
 videoreader|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/videoreader.py
+virtualenv|/Library/Python/2.7/site-packages/virtualenv.py
+virtualenv_support.__init__|/Library/Python/2.7/site-packages/virtualenv_support/__init__.py
 warnings|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/warnings.py
 wave|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wave.py
 weakref|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/weakref.py

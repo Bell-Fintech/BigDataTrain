@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>城市级联</title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<td>城市</td>
+				<td>
+					<select onchange="changeCity(this.value)">
+						<option>请选择</option>
+						<option value="0">山西省</option>
+						<option value="1">北京市</option>
+						<option value="2">浙江省</option>
+					</select>
+					<select id="city"></select>
+				</td>
+			</tr>
+		</table>
+	</body>
+	<script>
+		var cities=new Array(3)
+		cities[0]=new Array("太原","吕梁","临汾")
+		cities[1]=new Array("朝阳","昌平")
+		cities[2]=new Array("杭州","宁波")
+		function changeCity(data){
+			var city=document.getElementById("city")
+			city.length=0
+			for (i in cities[data]) {
+				var opt=document.createElement("option")
+				var cityOption=document.createTextNode(cities[data][i])
+				opt.appendChild(cityOption)
+				city.appendChild(opt)
+			}
+		}
+	</script>
+</html>

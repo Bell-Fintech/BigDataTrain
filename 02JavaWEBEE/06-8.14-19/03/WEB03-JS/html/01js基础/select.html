@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+		function checkAll(data){
+			//alert(data)
+			var arr=document.getElementsByName("checks")
+			for (var i in arr) {
+				arr[i].checked=data
+			}
+		}
+	</script>
+	<body>
+		<!--this=input 这个标签-->
+		<input type="checkbox" id="all" onclick="checkAll(this.checked)"/><br />
+		<input type="checkbox" name="checks" /><br />
+		<input type="checkbox" name="checks"/><br />
+		<input type="checkbox" name="checks" /><br />
+		<input type="checkbox" name="checks" /><br />
+		<input type="checkbox" name="checks"/><br />
+		<input type="checkbox" name="checks" /><br />
+		
+	</body>
+</html>

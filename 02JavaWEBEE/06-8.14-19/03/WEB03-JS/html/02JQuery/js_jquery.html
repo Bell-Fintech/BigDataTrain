@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../js/jquery-1.12.4.js"></script>
+		<script>
+			window.onload=function(){
+				//原始js对象
+				var name=document.getElementById("name")
+				//获取元素的值name.value
+				//获取jquery对象
+				var $name=$("#name")
+				var rs=$name.val()
+				//alert(rs)
+				
+				//js转换jquery
+				var $name1=$(name)
+				//alert($name1.val())
+				
+				//jquery转换js
+				var $name=$("#name")
+				//alert($name.get(0).value)
+				
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="name" value="zd" />
+	</body>
+</html>
