@@ -1,0 +1,19 @@
+import urllib
+import urlparse
+def urlencode():
+    params={'socre':100,'name':'spide_basic','comment':'good'}
+    
+    #dictionary-->url ascii
+    qs=urllib.urlencode(params)
+    print(qs)
+    #url ascii-->dictionary
+    print(urlparse.parse_qs(qs))
+    
+def parse_qs():
+    url='http://www.baidu.com/s?'
+    result=urlparse.urlparse(url)
+    print(result)
+    params=urlparse.parse_qs(result.query)
+    print(paeams)
+if __name__=='__main__':
+    urlencode()

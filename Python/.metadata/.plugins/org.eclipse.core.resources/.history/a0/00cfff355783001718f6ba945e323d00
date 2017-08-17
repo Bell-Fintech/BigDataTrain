@@ -1,0 +1,9 @@
+import urllib2
+def urlopen():
+    url='http://blog.kamidox.com/no'
+    s=urllib2.urlopen(url, timeout=3)
+    print(s.read(100))
+    
+if __name__=='__mian__':
+    urlopen()
+    

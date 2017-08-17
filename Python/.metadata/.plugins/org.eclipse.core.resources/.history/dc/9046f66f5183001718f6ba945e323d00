@@ -1,0 +1,26 @@
+import urllib
+def print_list(list):
+    for i in list:
+        print(i)
+        
+def demo():
+    s=urllib.urlopen('http://blog.kamidox.com')
+    #lines=s.readlines()
+    print(s.getcode())#200
+    #print_list(lines)
+    for i in range(10):
+        print('line %d:%s' %(i+1,s.readline()))
+    #print(s.readline())
+    #print(s.read(10))
+    
+    msg=s.info()
+    print(msg.getheader('Content-Type'))
+    #print_list(msg.headers)
+    #print_list(msg.items())
+    
+    #print_list(dir(msg))
+    
+    
+    
+if __name__=='__main__':
+    demo()

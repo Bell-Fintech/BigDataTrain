@@ -1,0 +1,16 @@
+import urllib
+def print_list(list):
+    for i in list:
+        print(i)
+def demo():
+    s=urllib.urlopen('http://blog.kamidox.com')
+    lines=s.readlines()
+    print(lines)
+    for i in range(10):
+        print('line %d:%s' %(i+1,s.readline()))
+    #print(s.readline())
+    #print(s.read(10))
+    
+    
+if __name__=='__main__':
+    demo()

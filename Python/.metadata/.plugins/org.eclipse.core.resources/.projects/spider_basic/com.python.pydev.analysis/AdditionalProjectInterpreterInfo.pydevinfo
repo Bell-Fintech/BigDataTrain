@@ -1,0 +1,25 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/Zd/Desktop/GitHub/BigDataTrain/Python/.metadata/.plugins/org.eclipse.core.resources/.projects/spider_basic/com.python.pydev.analysis/v2_indexcache
+urllib_demo|1502977797000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo.py
+urllib2_demo|1502979640000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib2_demo.py
+urllib_demo2|1502978740000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo2.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=urllib_demo
+3=urllib2_demo
+2=urllib_demo2
+-- END DICTIONARY
+-- START TREE 1
+6
+dem|1|demo!10@
+par|1|parse_qs!18@
+pri|1|print_list!10@
+pro|1|progress!10@
+ret|1|retrieve!10@
+url|2|urlopen!26@urlencode!18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

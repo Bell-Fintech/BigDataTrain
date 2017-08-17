@@ -1,4 +1,12 @@
 MODULES_MANAGER_V2
+blog.__init__|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/__init__.py
+blog.admin|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/admin.py
+blog.apps|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/apps.py
+blog.migrations.0001_initial|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/migrations/0001_initial.py
+blog.migrations.__init__|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/migrations/__init__.py
+blog.models|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/models.py
+blog.tests|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/tests.py
+blog.views|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/views.py
 manage|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/manage.py
 testBlog.__init__|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/__init__.py
 testBlog.settings|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/settings.py
