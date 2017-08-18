@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>可见性</title>
+	</head>
+	<script type="text/javascript" src="../../js/jquery-1.12.4.js" ></script>
+	<script>
+		$(function(){
+			$("input:disabled").val("add")
+			//属性名 属性值
+			$("input:disabled").attr("value","disabled")
+			$("input:enabled").attr("disabled","true")
+			//$("input[checked='checked'")
+			//下一级  空格
+			//$("select option:selected")
+		});
+	</script>
+	<body>
+		<form action="#" method="get">
+			<input type="text" disabled="disabled" value="不可用" />
+			<input type="text" value="可用" /><br />
+			<input type="checkbox" checked="checked" /><br />
+			<input type="checkbox" /><br />
+			<select>
+				<option selected="selected">add</option>
+				<option>add1</option>
+			</select>
+		</form>
+	</body>
+</html>
