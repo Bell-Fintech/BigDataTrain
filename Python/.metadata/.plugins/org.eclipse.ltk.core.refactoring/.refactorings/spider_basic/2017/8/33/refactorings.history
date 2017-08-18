@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spider_basic/src/bootstrap&apos; to &apos;bootstrap.py&apos;" description="Rename resource &apos;bootstrap&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/bootstrap" name="bootstrap.py" stamp="1503041114475" updateReferences="true"/>
+</session>
