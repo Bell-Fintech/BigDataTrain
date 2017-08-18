@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>WEB03-JS+JQuery</name>
+	<name>WEB04-JQuery+Bootsrap</name>
 	<comment>Create By HBuilder</comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>0</id>
+			<id>1503015299848</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -34,7 +34,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>0</id>
+			<id>1503049190504</id>
 			<name></name>
 			<type>26</type>
 			<matcher>

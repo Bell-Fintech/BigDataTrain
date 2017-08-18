@@ -3,15 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="../../css/style.css" type="text/css"/>
-		<script type="text/javascript" src="../../js/jquery-1.8.3.js" ></script>
+		<link rel="stylesheet" href="../../../css/style.css" type="text/css"/>
+		<script type="text/javascript" src="../../../js库/jquery-1.12.4.js" ></script>
 		<script>
 			$(function(){
 				$("#btn1").click(function(){
-					$("div[title]").css("background","#bbffaa");
+					//选择有title属性的div
+					//$("div[title]").css("background","#bbffaa");
+					//a开头
+					//$("div[title^a]").css("background","#bbffaa");
+					//a结尾
+					／／$("div[title$a]").css("background","#bbffaa");
 				});
 				
 				$("#btn2").click(function(){
+					//选择input
+					//$("input[type=text]").css("backgroundColor","#bbffaa");
+					//$(":text").css("backgroundColor","#bbffaa");
 					$("div[title='aaa']").css("backgroundColor","#bbffaa");
 				});
 				
@@ -25,6 +33,13 @@
 		<hr/>
 		<div id="one">
 			<div class="mini" title="aaa">
+				<input type="text" /><br />
+				<!--
+					提交：
+						1.利用图片提交 input type="image" 
+						2.button type="submit" 
+						3.<!--input type="submit"
+				-->
 				111
 			</div>
 		</div>
