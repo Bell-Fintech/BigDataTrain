@@ -2,26 +2,28 @@
 -- START DISKCACHE_2
 /Users/Zd/Desktop/GitHub/BigDataTrain/Python/.metadata/.plugins/org.eclipse.core.resources/.projects/spider_basic/com.python.pydev.analysis/v2_indexcache
 urllib_demo|1502977797000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo.py
+urllib2_demo|1503060246000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib2_demo.py
 bootstrap|1503041259000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/bootstrap.py
 urllib_demo2|1502978740000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo2.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
+4
 1=urllib_demo
-2=urllib_demo2
-3=bootstrap
+2=urllib2_demo
+3=urllib_demo2
+4=bootstrap
 -- END DICTIONARY
 -- START TREE 1
 9
 dem|1|demo!10@
-han|0|
-ins|0|
-par|1|parse_qs!18@
+han|1|handle_cookie!18@
+ins|1|install_debug_handler!18@
+par|1|parse_qs!26@
 pri|1|print_list!10@
-pro|2|progress!10@progress!26@
-req|0|
-ret|2|retrieve!26@retrieve!10@
-url|1|urlencode!18@
+pro|2|progress!10@progress!34@
+req|2|request!18@request_post_debug!18@
+ret|2|retrieve!34@retrieve!10@
+url|2|urlopen!18@urlencode!26@
 -- END TREE
 -- START TREE 2
 0

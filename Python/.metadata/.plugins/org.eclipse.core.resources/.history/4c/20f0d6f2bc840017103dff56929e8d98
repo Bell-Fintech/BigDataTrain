@@ -1,0 +1,8 @@
+1.安装 django 和 crispy_forms 模块 注意版本
+   django==1.9中包括：  django-crispy_forms==1.6 和 RadioFieldRenderer
+2.terminal:
+   cd /Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/djangoAdmin/example
+3.开启服务器：
+	python manage.py runserver
+4. http://127.0.0.1:8000/xadmin/
+	admin／admin
