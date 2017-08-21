@@ -1,0 +1,9 @@
+<html>
+<head><title></title></head>
+<body>
+<!-- key -->
+<h1>{{article.title}}</h1>
+<h3>{{article.content}}</h3>
+
+</body>
+</html>

@@ -14,6 +14,7 @@ public class Demo3 {
 	static String url=null;
 	static String username=null;
 	static String password=null;
+	//静态代码块只执行一次
 	static{
 				//读取配置文件
 				InputStream in=Demo2.class.getClassLoader().getResourceAsStream("config/db.properties");
@@ -28,13 +29,18 @@ public class Demo3 {
 			    url=p.getProperty("url");
 				username=p.getProperty("username");
 			    password=p.getProperty("password");
+			    try {
+					Class.forName(driverClass);
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
 	}
 	public static void main(String[] args) {
 		Connection conn=null;
 		Statement st=null;
 		ResultSet set=null;
 		try {
-			Class.forName(driverClass);
+			
 			conn=DriverManager.getConnection(url,username,password);
 			st=conn.createStatement();
 			String sql="select * from products where id<8";

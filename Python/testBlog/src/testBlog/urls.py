@@ -16,8 +16,16 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from blog.views import index
+import blog.views as bv
 
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
     url(r'^index/$',index),
+    
+    #url(r'^imooc/$',bv.imooc),
+    #url(r'^imooc/',include('blog.urls')),
+    
+    url(r'^blog/',include('blog.urls',namespace='blog')),
+    
+    url(r'^imooc2/$',include('blog2.urls')),
 ]

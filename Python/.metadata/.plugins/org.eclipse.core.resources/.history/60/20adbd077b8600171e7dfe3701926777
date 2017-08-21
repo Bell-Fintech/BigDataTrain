@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+ <h1>{{article.title1}}</h1>
+<h3>{{article.content}}</h3>
+<h3>{{hello}}</h3> 
+ -->
+<br>
+<h3>
+<a href="">新文章</a>
+</h3>
+{% for article in articles %}
+<a href="{% url 'blog:article_page' article.id%}">{{article.title1}}</a>
+<br>
+{% endfor %}
+</body>
+</html>

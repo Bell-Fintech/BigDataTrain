@@ -1,0 +1,10 @@
+package zd.test;
+
+import org.junit.Test;
+
+public class TestMyUtils {
+	@Test
+	public void add(){
+		
+	}
+}

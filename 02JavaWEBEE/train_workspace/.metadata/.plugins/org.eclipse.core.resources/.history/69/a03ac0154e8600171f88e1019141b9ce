@@ -1,0 +1,27 @@
+package zd.test;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import zd.utils.MyDbUtils;
+
+public class TestMyUtils {
+	@Before
+	public void init(){
+		MyDbUtils.getConnection();
+	}
+	
+	@Test
+	public void add(){
+		System.out.println("hello1");
+		
+	}
+	@Test
+	public void update(){
+		
+	}
+	@Test
+	public void delete(){
+		
+	}
+}

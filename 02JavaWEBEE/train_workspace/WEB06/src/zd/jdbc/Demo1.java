@@ -17,7 +17,6 @@ public class Demo1 {
 		//释放资源
 		statement.close();
 		conn.close();
-		
 	}
 
 }

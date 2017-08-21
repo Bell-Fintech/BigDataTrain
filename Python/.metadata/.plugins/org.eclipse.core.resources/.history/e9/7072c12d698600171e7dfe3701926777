@@ -2,7 +2,9 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from blog.models import BlogsPost
-from django.shortcuts import render_to_response
 
 # Create your views here.
+def imooc(request):
+    #return HttpResponse("hello imooc")
+    #if-else
+    return render(request, 'blog2.imooc.html')

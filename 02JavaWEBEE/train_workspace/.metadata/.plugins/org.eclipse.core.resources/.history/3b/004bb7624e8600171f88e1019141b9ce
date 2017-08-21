@@ -1,0 +1,30 @@
+package zd.test;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import zd.utils.MyDbUtils;
+
+public class TestMyUtils {
+	Connection conn=null;
+	@Before
+	public void init() throws SQLException{
+		conn=MyDbUtils.getConnection();
+	}
+	
+	@Test
+	public void add() throws SQLException{
+		Statement st=conn.createStatement();
+	}
+	@Test
+	public void update(){
+		
+	}
+	@Test
+	public void delete(){
+		
+	}
+}

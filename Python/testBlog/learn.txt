@@ -1,5 +1,5 @@
 1.eclipse中建项目，控制台，进入项目所在目录的src下找到manage.py   
- cd /Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src
+ cd /Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src  manage.py所在目录
  创建app python manage.py startapp blog
 2.python manage.py migrate 
   python manage.py syncdb报错  使用migrate
