@@ -1,4 +1,7 @@
 package zd.xml;
+import java.util.List;
+
+import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -16,7 +19,16 @@ public class demo {
 		Element element=book1.element("author");//<author>
 		String text=element.getText();
 		System.out.println(text);
+		Attribute attr=element.attribute("id");
+		System.out.println(attr.getValue());
 		
+		List list=rootElement.elements("book");
+		for(Object object :list){
+			Element book=(Element) object;
+			Element name=book.element("name");
+			String nameText=name.getText();
+			System.out.println(nameText);
+		}
 	}
 
 }

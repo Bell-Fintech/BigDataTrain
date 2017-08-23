@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="p1" class="zd.bean.p1"></bean>
+	<bean id="p2" class="zd.bean.p2">
+		<property name="s1">zd.bean.s1</property>
+	</bean>
+	<bean id="p3" class="zd.bean.p3">
+		<property name="s2">zd.bean.s2</property>
+		<property name="s3">zd.bean.s3</property>
+	</bean>
+</beans>

@@ -1,0 +1,11 @@
+package zd.test;
+
+import zd.factory.BeanFactory;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		BeanFactory.getBean("p1");
+	}
+
+}
