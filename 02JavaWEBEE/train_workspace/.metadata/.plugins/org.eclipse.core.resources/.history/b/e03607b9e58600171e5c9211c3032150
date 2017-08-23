@@ -1,0 +1,16 @@
+package zd.demo;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class TestMyPool {
+
+	public static void main(String[] args) throws Exception {
+		MyDataPool pool = new MyDataPool();
+		Connection conn=pool.getConnection();
+		String sql="insert into user values(null,?)";
+		PreparedStatement ps=conn.prepareStatement(sql);
+		
+	}
+
+}

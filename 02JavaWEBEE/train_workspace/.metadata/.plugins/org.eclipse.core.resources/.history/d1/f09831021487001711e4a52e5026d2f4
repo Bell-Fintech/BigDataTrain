@@ -1,0 +1,26 @@
+package zd.c3p0;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+public class DemoCRUD {
+	ComboPooledDataSource dataSource = null;
+	QueryRunner runner = null;
+
+	@Before
+	public void init() {
+		// 创建数据库连接池的连接
+		dataSource = new ComboPooledDataSource();
+		// 使用apache的工具类
+		runner = new QueryRunner(dataSource);
+	}
+
+	@Test
+	public void add() {
+String sql="insert into products values(null,?,?,?,?,?)"
+	}
+
+}

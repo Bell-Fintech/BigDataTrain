@@ -1,0 +1,19 @@
+package zd.c3p0;
+
+import org.apache.commons.dbutils.QueryRunner;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		//创建数据库连接池的连接
+		ComboPooledDataSource dataSource = new ComboPooledDataSource();
+		//使用apache的工具类
+		QueryRunner runner=new QueryRunner(dataSource);
+		String sql="select * from products where id=1";
+		
+		
+	}
+
+}

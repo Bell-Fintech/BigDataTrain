@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 只有一个根标签   严格区分大小写-->
+<books>
+	<book>
+		<author id="zd">zd</author>
+		<name>six</name>
+		<price>120</price>
+	</book>
+	<book>
+		<author id="xzh">xzh</author>
+		<name>six</name>
+		<price>1200</price>
+	</book>
+</books>

@@ -1,0 +1,4 @@
+package zd.beans;
+public class Product {
+
+}

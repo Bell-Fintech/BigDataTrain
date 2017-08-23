@@ -1,0 +1,14 @@
+package zd.demo;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestObject {
+	@Before
+	public void init(){
+	//获取数据库连接
+	}
+	@Test
+	public void test1(){
+	}
+}

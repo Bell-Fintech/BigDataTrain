@@ -1,0 +1,14 @@
+package zd.demo;
+
+import java.sql.Connection;
+
+public class TestMyPool {
+
+	public static void main(String[] args) {
+		MyDataPool pool = new MyDataPool();
+		Connection conn=pool.getConnection();
+		String sql="";
+		PreparedStatement ps=conn.prepareStatement(sql);
+	}
+
+}

@@ -1,0 +1,15 @@
+package zd.dbcp;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.apache.commons.dbcp.BasicDataSourceFactory;
+
+public class Demo2 {
+	public static void main(String[] args) {
+		Properties p = new Properties();
+		p.load(new FileInputStream("dncp.properties"));
+		BasicDataSourceFactory dataSourceFactory = new BasicDataSourceFactory();
+		BasicDataSourceFactory.createDataSource(p);
+	}
+}

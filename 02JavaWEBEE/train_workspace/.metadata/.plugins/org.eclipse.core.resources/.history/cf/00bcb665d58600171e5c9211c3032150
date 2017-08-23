@@ -1,0 +1,19 @@
+package zd.demo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestObject {
+	Connection conn=null;
+	@Before
+	public void init() throws SQLException{
+	//获取数据库连接
+	conn=MyDbUtils.getConnection();
+	}
+	@Test
+	public void test1(){
+	}
+}

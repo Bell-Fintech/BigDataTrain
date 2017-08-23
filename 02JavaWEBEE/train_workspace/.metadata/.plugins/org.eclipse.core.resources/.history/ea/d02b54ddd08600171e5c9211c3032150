@@ -1,0 +1,24 @@
+package zd.demo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestUtils {
+	Connection conn=null;
+	 Statement st=null;
+	//先test 后before
+	@Before
+	public void init() throws SQLException{
+		 conn=MyDbUtils.getConnection();
+		 st=conn.createStatement();
+	}
+	@Test
+	public void add(){
+		String sql="insert into products values(null,'数据结构',12.09,'计算机',1000,'掌握，适用广')";
+		
+	}
+}

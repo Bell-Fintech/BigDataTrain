@@ -1,0 +1,9 @@
+package zd.c3p0;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		new CombopooledDataSource();
+	}
+
+}

@@ -1,0 +1,17 @@
+package zd.demo;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestUtils {
+	Connection conn=null;
+	//先test 后before
+	@Before
+	public void init(){
+		 conn=MyDbUtils.getConnection();
+	}
+	@Test
+	public void add(){
+		
+	}
+}
