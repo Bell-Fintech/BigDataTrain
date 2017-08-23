@@ -10,7 +10,7 @@ public class TestMyPool {
 		MyDataPool pool = new MyDataPool();
 		//获取数据库连接池中的连接
 		Connection conn = pool.getConnection();
-		String sql = "insert into user values(null,?)" ;
+		String sql = "insert into user1 values(null,?)" ;
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setString(1, "西门庆");
 		ps.executeUpdate();

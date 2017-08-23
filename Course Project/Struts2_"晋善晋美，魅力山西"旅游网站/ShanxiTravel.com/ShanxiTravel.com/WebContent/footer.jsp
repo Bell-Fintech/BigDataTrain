@@ -53,8 +53,7 @@
                  <div class="foot_note_con">
                      <span class="foot_logo"><img src="images/travel_logo.jpg" width="38px" height="38px"></span>
 						<span class="foot_note_txt"align="center">
-							<a>晋善晋美，魅力山西</a><h>|</h><a>1414010824和泽</a><h>|</h><a>1414010513张丹</a><h>|</h><a>版权所有，违者必究</a><h>|</h><a>问题反馈</a><h>|</h><a>Select Region</a>
-						    <a> 14140Y01号</a>
+							<a>Copyright © 2017 Octal_H. All Rights Reserved.</a><h>|</h><a>OC程序员</a><h>|</h><a>问题反馈</a><h>|</h><a>晋ICP备17006522号</a>
 						</span>
                  </div>
 
