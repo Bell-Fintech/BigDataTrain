@@ -1,0 +1,15 @@
+package service;
+
+import zd.bean.User;
+import zd.dao.userDao;
+
+public class userServiceImpl implements userService {
+	userDao dao= new userDaoImpl();
+
+	@Override
+	public int register(User user) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

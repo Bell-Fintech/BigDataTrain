@@ -1,0 +1,31 @@
+package zd.dao;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+import zd.bean.User;
+
+public class UserDao {
+	public static void main(String[] args) {
+		// 接收页面的参数 tomcat接收数据的时候使用的是iso8859-1 编码解
+		String name = request.getParameter("username");
+		// get请求出现了乱码
+		/*
+		 * byte[] bs = name.getBytes("iso8859-1"); String nnanm = new String(bs,
+		 * "UTF-8");
+		 */
+
+		String pwd = request.getParameter("password");
+		// 操作数据库
+		// 1 要有jar 配置文件
+		// 2 创建数据库连接池的对象
+		ComboPooledDataSource dataSource = new ComboPooledDataSource();
+		// 3使用阿帕奇的工具类
+		QueryRunner runner = new QueryRunner(dataSource);
+		// 写sql
+		String sql = "select * from user where username=? and password=?";
+		User user = runner.query(sql, new BeanHandler<User>(User.class), name, pwd);
+	}
+}

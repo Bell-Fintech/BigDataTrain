@@ -34,4 +34,8 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+<fullyQualifiedTypeName name="zd.bean.User"/>
+<fullyQualifiedTypeName name="zd.dao.userDao"/>
+<fullyQualifiedTypeName name="zd.dao.userDaoImpl"/>
 </qualifiedTypeNameHistroy>

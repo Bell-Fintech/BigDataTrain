@@ -1,0 +1,5 @@
+package zd.dao;
+
+public class userDaoImpl implements userDao{
+	
+}

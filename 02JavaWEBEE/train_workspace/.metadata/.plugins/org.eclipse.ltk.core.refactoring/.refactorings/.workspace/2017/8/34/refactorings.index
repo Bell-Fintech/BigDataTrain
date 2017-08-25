@@ -3,3 +3,5 @@
 1503474468742	Delete resource 'ShanxiTravel'
 1503557852229	Copy compilation units
 1503559106176	Delete resource 'WEB09/lib'
+1503627711399	Delete resource 'WEB09/WebContent/WEB-INF/lib/commons-dbutils-1.6.jar'
+1503627715358	Delete resource 'WEB09/WebContent/WEB-INF/lib/mysql-connector-java-5.1.42-bin.jar'

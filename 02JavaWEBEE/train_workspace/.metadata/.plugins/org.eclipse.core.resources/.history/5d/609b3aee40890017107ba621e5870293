@@ -1,0 +1,7 @@
+package service;
+
+import zd.bean.User;
+
+public interface userServiece {
+	public int register(User user);
+}

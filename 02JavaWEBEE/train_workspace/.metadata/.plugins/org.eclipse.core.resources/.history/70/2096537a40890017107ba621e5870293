@@ -1,0 +1,7 @@
+package zd.dao;
+
+import zd.bean.User;
+
+public interface userDao {
+	public int register(User user);
+}

@@ -1,0 +1,12 @@
+package zd.dao;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+import zd.bean.User;
+
+public class UserDao {
+	}
+}

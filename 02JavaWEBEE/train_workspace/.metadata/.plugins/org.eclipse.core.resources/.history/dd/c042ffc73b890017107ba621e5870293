@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="" method="post">
+		username:<input type="text" name="username"/>
+		password:<input type="text" name="password"/>
+		gender:<input type="radio" name="gender" value="m"/>m
+			<input type="radio" name="gender" value="f"/>f
+		email:<input type="email" name="email"/>
+		telephone:<input type="text" name="telephone"/>
+		state:<input type="text" name="state"/>
+		role:<input type="text" name="role"/>
+		registTime:<input type="date" name="registTime"/>
+	</form>
+</body>
+</html>
