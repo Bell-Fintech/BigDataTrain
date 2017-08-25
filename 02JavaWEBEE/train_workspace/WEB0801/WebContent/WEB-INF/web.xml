@@ -9,4 +9,34 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>MyServlet</display-name>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>zd.web.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyServlet1</display-name>
+    <servlet-name>MyServlet1</servlet-name>
+    <servlet-class>zd.web.MyServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet1</servlet-name>
+    <url-pattern>/MyServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DemoConfig</display-name>
+    <servlet-name>DemoConfig</servlet-name>
+    <servlet-class>zd.web.DemoConfig</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoConfig</servlet-name>
+    <url-pattern>/DemoConfig</url-pattern>
+  </servlet-mapping>
 </web-app>

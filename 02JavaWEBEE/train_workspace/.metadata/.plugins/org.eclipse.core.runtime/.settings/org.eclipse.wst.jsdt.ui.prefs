@@ -5,6 +5,8 @@ org.eclipse.wst.jsdt.internal.ui.navigator.layout=1
 org.eclipse.wst.jsdt.ui.editor.tab.width=
 org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
 org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
+org.eclipse.wst.jsdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="javaScript" deleted\="false" description\="\u6A21\u677F" enabled\="true" name\="servlet">package ${enclosing_package};\n\nimport java.io.IOException;\nimport javax.servlet.ServletException;\nimport javax.servlet.http.HttpServlet;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http.HttpServletResponse;\n\n\npublic class ${primary_type_name} extends HttpServlet {\n    private static final long serialVersionUID \= 1L;\n\n   \n\n    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n        request.setCharacterEncoding("UTF-8");\n        response.setCharacterEncoding("UTF-8");\n        response.setContentType("text/html; charset\=UTF-8");\n    }\n\n}</template></templates>
+org.eclipse.wst.jsdt.ui.text.templates_migrated=true
 proposalOrderMigrated=true
 tabWidthPropagated=true
 useAnnotationsPrefPage=true

@@ -1,0 +1,75 @@
+package zd.request;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import zd.request.MyDbUtils;
+
+public class RequestDemo extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	Connection conn = null;
+	Statement st = null;
+	PreparedStatement ps = null;
+	javax.servlet.ServletContext context =this.getServletContext();
+	RequestDispatcher dispatcher = null;
+	public void init() {
+		try {
+			conn = MyDbUtils.getConnection();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			st = conn.createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		// 每次请求时创建一个request对象
+		// 获取页面传递过来的参数
+		String name = request.getParameter("username");
+		String pass = request.getParameter("password");
+		// System.out.println(name+","+pass);
+
+		if (name != null && pass != null) {
+			// 配置文件
+			String sql = "insert into requestUser values(?,?)";
+			try {
+				ps = conn.prepareStatement(sql);
+				ps.setString(1, name);
+				ps.setString(2, pass);
+				int i = st.executeUpdate(sql);
+				System.out.println("插入数据库" + i);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			// 必须关闭 否则测试错误
+			// 即使下面有错误 也可以执行 因为是单元测试
+			MyDbUtils.release(conn, st, null);
+			dispatcher = context.getRequestDispatcher("success.html");
+	        dispatcher.forward(request, response);
+		}else{
+			
+		}
+
+	}
+
+}

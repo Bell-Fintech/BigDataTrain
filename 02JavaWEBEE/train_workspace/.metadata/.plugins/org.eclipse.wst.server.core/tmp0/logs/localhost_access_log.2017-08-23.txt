@@ -106,3 +106,5 @@
 0:0:0:0:0:0:0:1 - - [23/Aug/2017:15:20:15 +0800] "GET /ShanxiTravel.com/images/erlongshan.jpg HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [23/Aug/2017:15:20:15 +0800] "GET /ShanxiTravel.com/images/tushuguan.jpg HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [23/Aug/2017:15:20:15 +0800] "GET /ShanxiTravel.com/images/tanke.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2017:16:34:47 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Aug/2017:16:34:48 +0800] "GET /WEB0801/MyServlet HTTP/1.1" 200 -

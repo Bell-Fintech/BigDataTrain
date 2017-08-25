@@ -1,0 +1,8 @@
+package zd.web;
+
+public class Snippet {
+	public static void main(String[] args) {
+		MyServlet1
+	}
+}
+
