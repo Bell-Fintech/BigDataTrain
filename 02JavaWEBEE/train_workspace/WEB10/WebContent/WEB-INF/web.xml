@@ -29,4 +29,14 @@
     <servlet-name>Response2</servlet-name>
     <url-pattern>/Response2</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Response3</display-name>
+    <servlet-name>Response3</servlet-name>
+    <servlet-class>zd.response.Response3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Response3</servlet-name>
+    <url-pattern>/Response3</url-pattern>
+  </servlet-mapping>
 </web-app>
