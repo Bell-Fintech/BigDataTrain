@@ -1,0 +1,32 @@
+package com.web;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Response3 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		/*//设置状态码
+		response.setStatus(302);
+		//再设置一个响应头  location
+		response.setHeader("location", "/WEB10/send.html");*/
+		//向request域中存数据
+		request.setAttribute("name", "美美");
+		//重定向  实现页面的跳转
+		response.sendRedirect("/WEB10/Response4");//地址栏发生改变  request域中的数据不会传递
+		
+		
+		
+		
+		
+	}
+
+}

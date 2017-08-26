@@ -11,8 +11,7 @@ public class userServiceImpl implements userService {
 
 	@Override
 	public int register(User user) throws SQLException {
-		dao.register(user);
-		return 0;
+		return dao.register(user);
 	}
 
 }

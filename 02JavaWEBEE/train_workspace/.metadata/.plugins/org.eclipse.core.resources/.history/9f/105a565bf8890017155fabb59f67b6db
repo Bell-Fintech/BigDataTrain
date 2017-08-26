@@ -1,0 +1,17 @@
+package com.service;
+
+import java.sql.SQLException;
+
+import com.beans.User;
+import com.dao.UserDao;
+import com.dao.UserDaoImpl;
+
+public class UserServiceImpl implements UserService{
+    UserDao dao = new  UserDaoImpl();
+	@Override
+	public int regiter(User user) throws SQLException {
+		// TODO Auto-generated method stub
+		return dao.regiter(user);
+	}
+
+}

@@ -20,9 +20,9 @@ public class userDaoImpl implements userDao {
 		// 3使用阿帕奇的工具类
 		QueryRunner runner = new QueryRunner(dataSource);
 		// 写sql
-		String sql = "select into  user values(null,?,?,?,?,?,?)";
+		String sql = "insert into  user values(null,?,?,?,?,?,null)";
 		int i = runner.update(sql, user.getUsername(), user.getPassword(), user.getGender(), user.getEmail(),
-				user.getTelephone(), user.getRegistTime());
+				user.getTelephone());
 		return i;
 	}
 

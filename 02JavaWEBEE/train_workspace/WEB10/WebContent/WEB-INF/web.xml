@@ -69,4 +69,14 @@
     <servlet-name>TestCookieTime</servlet-name>
     <url-pattern>/TestCookieTime</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Register1</display-name>
+    <servlet-name>Register1</servlet-name>
+    <servlet-class>zd.response.Register1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register1</servlet-name>
+    <url-pattern>/Register1</url-pattern>
+  </servlet-mapping>
 </web-app>

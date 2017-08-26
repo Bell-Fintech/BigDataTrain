@@ -1,0 +1,21 @@
+package com.dao;
+
+import java.sql.SQLException;
+
+import org.apache.commons.dbutils.QueryRunner;
+
+import com.beans.User;
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+
+public class UserDaoImpl  implements UserDao{
+	@Override
+	public int regiter(User user) throws SQLException {
+		//执行sql语句
+		ComboPooledDataSource dataSource = new ComboPooledDataSource();
+		QueryRunner runner = new QueryRunner(dataSource);
+		String sql = "insert into user1 values(null,?,?,?,?,?,?,null)";
+		int i = runner.update(sql, user.getUsername(),user.getPassword(),user.getGender(),user.getEmail(),user.getTelephone());
+		return i;
+	}
+
+}

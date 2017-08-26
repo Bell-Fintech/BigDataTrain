@@ -24,6 +24,7 @@ public class TestCookie1 extends HttpServlet {
         //cookie.setPath("/WEB10");
         //一个小时
         //cookie.setMaxAge(60*60);
+        //返回给浏览器
         response.addCookie(cookie);
         
     }

@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/WEB10" path="/WEB10" reloadable="true" source="org.eclipse.jst.jee.server:WEB10"/></Host>
+      <Context docBase="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/WEB11" path="/WEB11" reloadable="true" source="org.eclipse.jst.jee.server:WEB11"/><Context docBase="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/WEB10" path="/WEB10" reloadable="true" source="org.eclipse.jst.jee.server:WEB10"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,0 +1,11 @@
+package com.service;
+
+import java.sql.SQLException;
+
+import com.beans.User;
+
+public interface UserService {
+	
+	public int regiter(User user) throws SQLException;
+
+}

@@ -1,0 +1,33 @@
+package com.web;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Response1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	     //request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		//数据库中查商品   list<Product>   遍历  Product    id name price 拿出每个实体的属性
+		/*response.getWriter().write("<!DOCTYPE html>");
+		response.getWriter().write("<html>");
+		response.getWriter().write("<head>");
+		response.getWriter().write("<body>");
+		response.getWriter().write(" <form action=''>");
+		for (int i = 0; i <5; i++) {
+			response.getWriter().write(" <input type='text' name='name'  value='Jack'/>");
+		}
+		response.getWriter().write("</form>");
+		response.getWriter().write("</body>");
+		response.getWriter().write("</html>");*/
+		
+		
+	}
+
+}
