@@ -93,3 +93,9 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
 	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
 	... 16 more
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-25 15:09:35.357
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-25 15:09:35.357
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

@@ -38,4 +38,10 @@
 <fullyQualifiedTypeName name="zd.bean.User"/>
 <fullyQualifiedTypeName name="zd.dao.userDao"/>
 <fullyQualifiedTypeName name="zd.dao.userDaoImpl"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="java.net.URLEncoder"/>
+<fullyQualifiedTypeName name="java.net.URLDecoder"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

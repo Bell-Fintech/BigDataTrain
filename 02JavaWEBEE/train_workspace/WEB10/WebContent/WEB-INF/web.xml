@@ -39,4 +39,34 @@
     <servlet-name>Response3</servlet-name>
     <url-pattern>/Response3</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestCookie1</display-name>
+    <servlet-name>TestCookie1</servlet-name>
+    <servlet-class>zd.cookie.TestCookie1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestCookie1</servlet-name>
+    <url-pattern>/TestCookie1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestCookie2</display-name>
+    <servlet-name>TestCookie2</servlet-name>
+    <servlet-class>zd.cookie.TestCookie2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestCookie2</servlet-name>
+    <url-pattern>/TestCookie2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestCookieTime</display-name>
+    <servlet-name>TestCookieTime</servlet-name>
+    <servlet-class>zd.cookie.TestCookieTime</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestCookieTime</servlet-name>
+    <url-pattern>/TestCookieTime</url-pattern>
+  </servlet-mapping>
 </web-app>
