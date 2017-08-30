@@ -1,0 +1,25 @@
+package zd.web;
+
+import java.util.Scanner;
+
+/*
+	校验邮箱
+		274254@qq.com
+		xzy@163.com
+ */
+public class test {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean b = checkEmail(sc);
+		System.out.println(b);
+	}
+
+	private static boolean checkEmail(Scanner sc) {
+		System.out.println("请输入要校验的邮箱：");
+		String email = sc.nextLine();
+		// String regex = "[a-zA-Z_0-9]+@[a-zA-Z_0-9]+(\\.[a-zA-Z_0-9]{2,3})+";
+		String regex = "\\w+@\\w+(\\.\\w{2,3})+";
+		return email.matches(regex);
+	}
+
+}

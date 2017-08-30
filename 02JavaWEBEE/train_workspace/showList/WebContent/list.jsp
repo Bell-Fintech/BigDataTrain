@@ -39,12 +39,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <br/>
     <table width="80%" align="center">
       <tr>
-      	<td>设备编号</td>
-      	<td>设备名称</td>
-      	<td>领用人</td>
-      	<td>设备类型</td>
-      	<td>设备状态</td>
-      	<td>报废状态</td>
+      	<td>商品编号</td>
+      	<td>商品名称</td>
+      	<td>负责人</td>
+      	<td>类型</td>
+      	<td>商品状态</td>
+      	<td>可售状态</td>
       	<td>操作</td>
       </tr>
 <!-- 		${status.index} 输出行号，从0开始。 -->

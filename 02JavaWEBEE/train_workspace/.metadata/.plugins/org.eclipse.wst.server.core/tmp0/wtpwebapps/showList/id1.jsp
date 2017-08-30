@@ -30,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         		errormessage = "";
         	}
         %>
-        <h3>请输入设备编号</h3>
+        <h3>请输入商品编号</h3>
     <form action="equipment?op=getByIdSingle"  method="post">
           <input type="text" name="id" id="a" placeholder="请输入整数">
           <input type="submit" value="查询" ><%=errormessage %>

@@ -110,15 +110,15 @@ public class EquipmentServlet extends HttpServlet{
 			req.setAttribute("equipment", equipment);
 			String NoReturn = equipmentDao.getNoReturn();
 			if ("".equals(NoReturn)) {
-				NoReturn = "当前无设备借出";
+				NoReturn = "当前无商品售出";
 				req.setAttribute("NoReturn", NoReturn);
 			} else {
-				NoReturn = "当前设备" + NoReturn + "已借出";
+				NoReturn = "当前商品" + NoReturn + "已售出";
 				req.setAttribute("NoReturn", NoReturn);
 			}
 			req.getRequestDispatcher("id.jsp").forward(req, resp);
 		}else{
-			req.setAttribute("errormessage", "没有这个实验设备");
+			req.setAttribute("errormessage", "没有这个商品");
 			req.getRequestDispatcher("id1.jsp").forward(req, resp);
 		}
 	}
@@ -182,12 +182,12 @@ public class EquipmentServlet extends HttpServlet{
 		String NoReturn =equipmentDao.getNoReturn();
 		if("".equals(NoReturn))
 		{
-			NoReturn="当前无设备借出";
+			NoReturn="当前无商品售出";
 			req.setAttribute("NoReturn", NoReturn);
 		}
 		else
 		{
-			NoReturn="当前设备"+NoReturn+"已借出";
+			NoReturn="当前商品"+NoReturn+"已售出";
 		    req.setAttribute("NoReturn", NoReturn);
 		}
 		req.getRequestDispatcher("list.jsp").forward(req, resp);

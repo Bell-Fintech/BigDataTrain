@@ -18,7 +18,7 @@ public class DBUtil
 			//注册获得数据库的驱动
 			Class.forName("com.mysql.jdbc.Driver");
 			//获得与数据库的连接
-			String url="jdbc:mysql://localhost:3306/List";
+			String url="jdbc:mysql://localhost:3306/List?characterEncoding=UTF-8";
 			conn=DriverManager.getConnection(url,"root","");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

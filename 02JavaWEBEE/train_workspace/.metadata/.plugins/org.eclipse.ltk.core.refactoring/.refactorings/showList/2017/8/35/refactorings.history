@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;showList/WebContent/EEMS首页.files&apos; to &apos;后台首页.files&apos;" description="Rename resource &apos;EEMS首页.files&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/EEMS首页.files" name="后台首页.files" stamp="1503802656017" updateReferences="true"/>
+</session>

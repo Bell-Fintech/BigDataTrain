@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="org.dom4j.io.SAXReader"/>
 <fullyQualifiedTypeName name="org.dom4j.Document"/>
 <fullyQualifiedTypeName name="org.dom4j.Element"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="zd.factory.BeanFactory"/>
 <fullyQualifiedTypeName name="zd.bean.p1"/>
 <fullyQualifiedTypeName name="zd.bean.p2"/>
@@ -46,4 +45,10 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="service.userService"/>
 <fullyQualifiedTypeName name="service.userServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

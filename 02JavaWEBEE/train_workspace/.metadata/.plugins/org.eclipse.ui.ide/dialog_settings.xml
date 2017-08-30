@@ -2,9 +2,10 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/Zd/Desktop/EEMS"/>
 			<item value="/Users/Zd/Desktop/GitHub/BigDataTrain/Course Project/Struts2_&quot;晋善晋美，魅力山西&quot;旅游网站"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

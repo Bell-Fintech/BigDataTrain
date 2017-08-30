@@ -10,6 +10,16 @@
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
 	</section>
+	<section name="ProblemSeveritiesConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="false" key="expanded1"/>
+		<item value="false" key="expanded4"/>
+		<item value="false" key="expanded3"/>
+		<item value="false" key="expanded6"/>
+		<item value="false" key="expanded5"/>
+		<item value="false" key="expanded7"/>
+		<item value="true" key="expanded0"/>
+	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="356" key="DIALOG_WIDTH"/>
 		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
@@ -97,6 +107,9 @@
 		<item value="570" key="DIALOG_HEIGHT"/>
 		<item value="436" key="DIALOG_X_ORIGIN"/>
 		<item value="14" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="7" key="index"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 		<item value="805" key="size.y"/>
