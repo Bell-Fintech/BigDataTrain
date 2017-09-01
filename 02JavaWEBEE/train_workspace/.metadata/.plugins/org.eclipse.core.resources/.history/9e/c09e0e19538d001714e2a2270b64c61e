@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+.span{
+font-size:150%;
+text-align:center;
+color:#000000;
+}
+.n{
+font-size:200%;
+color:#FFFFFF;
+}
+div{
+margin:0;
+padding:0;
+width:250px;
+height:250px;
+text-align:center;
+float:left;
+background: no-repeat
+}
+.mark{
+font-size:200%;
+color:#FFFFFF;
+text-align:center;
+}
+#boarder {	
+	border:solid 2px blue;
+	border-radius:2px;
+	-moz-border-radius:2px;	
+	padding:20px;
+	width:10px;
+	height:10px;
+}
+.zhuan1_4kuai {
+    width: 157px;
+    height: 157px;
+    margin: 0 auto;
+
+    -webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    -o-transition: -o-transform 1s ease-out;
+    -ms-transition: -ms-transform 1s ease-out;
+}
+.zhuan1_4kuai:hover {
+    width: 157px;
+    height: 157px;
+    margin: 0 auto;
+    background: no-repeat url("../images/zhuan1.png") left top;
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+
+}
+</style>
+<body background="images/11.png">
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br><br>
+<br>
+<br>
+<br><br>
+<table>
+
+<tr class="span">
+<td width="20%">
+<div class="zhuan1_4kuai"><img src="images/6.png" width="180" height="180"></div></td>
+<td width="20%">
+<div><img src="images/5.png" width="180" height="180"></div></td>
+<td width="20%">
+<div><img src="images/4.png" width="180" height="180"></div></td>
+<td width="20%"><div  class="zhuan1_4kuai"><img src="images/3.png" width="180" height="180"></div></td>
+
+</tr>
+<tr width="100%" height="100%">
+<td class="n">ZhangDan</td>
+</tr>
+<tr>
+<td><font size="5">Manager</td>
+</tr>
+</table>
+</body>
+</html>

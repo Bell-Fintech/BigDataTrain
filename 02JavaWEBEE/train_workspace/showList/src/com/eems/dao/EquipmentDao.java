@@ -42,7 +42,7 @@ public class EquipmentDao extends DBUtil{
 			while(rs.next())
 			{
 				list.add(new Equipment(rs.getInt(1),rs.getString(2),rs.getString(3),
-						rs.getInt(4),rs.getInt(5),rs.getInt(6)));
+						rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -78,7 +78,7 @@ public class EquipmentDao extends DBUtil{
 				if(rs.next())
 				{
 					return new Equipment(rs.getInt(1),rs.getString(2),rs.getString(3),
-							rs.getInt(4),rs.getInt(5),rs.getInt(6));
+							rs.getInt(4),rs.getInt(5),rs.getInt(6),rs.getDouble(7));
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -90,16 +90,16 @@ public class EquipmentDao extends DBUtil{
 	//添加设备
 	public int add(Equipment b)
 	{
-		String sql="insert into equipment values(?,?,?,?,?,?)";
+		String sql="insert into equipment values(?,?,?,?,?,?,?)";
 		return this.executeUpdate(sql,b.getEquipmentNo(),b.getEquipmentName(),
-				b.getPerson(),b.getEquipmentTypeId(),b.getEquipmentStatusId(),b.getIsScrapId());
+				b.getPerson(),b.getEquipmentTypeId(),b.getEquipmentStatusId(),b.getIsScrapId(),b.getChangeMoney());
 	}
 	//修改设备
 	public int update(Equipment b)
 	{
-		String sql="update equipment set equipmentName=?,person=?,equipmentTypeId=?,equipmentStatusId=?,isScrapId=? where equipmentNo=?";
+		String sql="update equipment set equipmentName=?,person=?,equipmentTypeId=?,equipmentStatusId=?,isScrapId=?,changeMoney=? where equipmentNo=?";
 		return this.executeUpdate(sql, b.getEquipmentName(),b.getPerson(),b.getEquipmentTypeId(),
-				b.getEquipmentStatusId(),b.getIsScrapId(),b.getEquipmentNo());
+				b.getEquipmentStatusId(),b.getIsScrapId(),b.getChangeMoney(),b.getEquipmentNo());
 	}
 	//删除设备
 	public int delete(int id)

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动态效果</title>
+	</head>
+	<script src="../../js/jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$("#btn1").click(function(){
+				//$("#img1").show(2000);
+				//$("#img1").slideDown(2000)
+				$("#img1").fadeIn(2000)
+				
+			})
+			$("#btn2").click(function(){
+				//$("#img1").hide(2000);
+				//("#img1").slideUp(2000)
+				$("#img1").fadeOut(2000)
+			})
+		});
+		
+	</script>
+	<body>
+		<!--block:show none:hide-->
+		<img id="img1" src="../../img/1.jpg" style="display: none" width="100%" />
+		<button id="btn1">显示图片</button>
+		<button id="btn2">隐藏图片</button>
+	</body>
+</html>

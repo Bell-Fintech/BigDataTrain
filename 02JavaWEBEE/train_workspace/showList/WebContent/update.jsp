@@ -24,21 +24,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	          <td colspan="2"><h3>修改</h3></td>
     	      </tr>
     	      <tr>
-    	      		<td>商品编号<input type="hidden" name="op" value="update"></td>
+    	      		<td>设备编号<input type="hidden" name="op" value="update"></td>
     	      		<td><input type="text" name="id" value="${equipment.equipmentNo }" disabled>
     	      		    <input type="hidden" name="id1" value="${equipment.equipmentNo }">
     	      		</td>
     	      </tr>
     	      <tr>
-    	      		<td>商品名称</td>
+    	      		<td>设备名称</td>
     	      		<td><input type="text" name="equipmentName" value="${equipment.equipmentName }"></td>
     	      </tr>
     	      <tr>
-    	      		<td>负责人</td>
+    	      		<td>领用人</td>
     	      		<td><input type="text" name="person" value="${equipment.person }"></td>
     	      </tr>
     	      <tr>
-    	      		<td>类型</td>
+    	      		<td>设备类型</td>
     	      		<td>
     	      			<select name="equipmentTypeId">
     	      				<c:forEach items="${typelist }" var="bean">
@@ -55,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </td>
     	      </tr>
     	      <tr>
-    	      		<td>商品状态</td>
+    	      		<td>设备状态</td>
     	      		<td>
     	      		  <select name="equipmentStatusId">
     	      				<c:forEach items="${statuslist }" var="bean">
@@ -64,8 +64,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	      		  </select>
     	      		</td>
     	      </tr>
+    	      
     	      <tr>
-    	      		<td>是否可售</td>
+    	      		<td>是否报废</td>
     	      		<td>
     	      		   <select name="isScrapId">
     	      			<c:forEach items="${slist }" var="bean">
@@ -75,6 +76,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</c:forEach>
 				</select>
     	      		</td>
+    	      </tr>
+    	       <tr>
+    	      		<td>更换费用</td>
+    	      		<td><input type="text" name="changeMoney" value="${equipment.changeMoney }"></td>
     	      </tr>
     	      <tr>
     	      		<td colspan="2" align="center"><input type="submit" value="提交"></td>

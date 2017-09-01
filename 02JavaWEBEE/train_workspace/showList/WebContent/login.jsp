@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>商品管理系统</title>
+<title>设备管理系统</title>
 
 <script>
 	if (window.top !== window.self) {
@@ -53,11 +53,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<form id="loginForm" method="post" action="login"
 					onsubmit="$(':input[name=userName]').each(function(){if($(this).is(':hidden')){$(this).remove();}});return true;"
 				  >
+				    
 					<h3 class="no-margins">登录：</h3>
 					<input type="text" class="form-control uname" id="userName" name="name" value="1414010513" placeholder="请输入账号" />
 					<input type="password" class="form-control pword m-b" id="userPwd" name="pwd" placeholder="输入你的密码" />
 					
 					<p style="height: 1em;color: #CC0066;" class="text-right"></p>
+					<button class="btn btn-success btn-block" type="submit">注册</button>
 					<button class="btn btn-success btn-block" type="submit">登录</button>
 				</form>
 			</div>

@@ -1,4 +1,0 @@
-c3p0.driverclass=com.mysql.jdbc.Driver
-c3p0.url=jdbc:mysql://localhost:3306/tarin_mysql?characterEncoding=UTF8
-c3p0.username=root
-c3p0.password=

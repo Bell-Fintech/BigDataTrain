@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>qq好友列表展示</title>
+		<script type="text/javascript" src="../../js/jquery-1.8.3.js"></script>
+		
+		<style type="text/css">
+			div * {
+				display: block;
+				width: 200px;
+			}
+			
+			div span {
+				background-color: #0f0;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				//获取需要绑定事件的元素
+				$("span").toggle(function(){//隐藏
+					//获取要隐藏的元素
+					$(this).siblings().hide(1000);
+					
+				},function(){//显示
+					
+					$(this).siblings().show(1000);
+				})
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<span>男盆友</span>
+			<a>刘德华</a>
+			<a>郭富城</a>
+			<a>张学友</a>
+		</div>
+		<div>
+			<span>女盆友</span>
+			<a>高圆圆</a>
+			<a>杨幂幂</a>
+		</div>
+		<div>
+			<span>追求中</span>
+			<a>凤姐</a>
+			<a>芙蓉姐姐</a>
+			<a>如花</a>
+		</div>
+
+	</body>
+
+</html>

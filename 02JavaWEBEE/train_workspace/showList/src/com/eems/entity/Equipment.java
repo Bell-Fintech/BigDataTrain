@@ -7,10 +7,13 @@ public class Equipment {
 	private int equipmentTypeId;//设备类型id
 	private int equipmentStatusId;//设备状态id
 	private int isScrapId;//是否报废id
+	private double changeMoney;
+	
+	
 	public Equipment() {
 	}
-	public Equipment(int equipmentNo, String equipmentName, String person,
-			int equipmentTypeId, int equipmentStatusId, int isScrapId) {
+	public Equipment(int equipmentNo, String equipmentName, String person, int equipmentTypeId, int equipmentStatusId,
+			int isScrapId, double d) {
 		super();
 		this.equipmentNo = equipmentNo;
 		this.equipmentName = equipmentName;
@@ -18,6 +21,7 @@ public class Equipment {
 		this.equipmentTypeId = equipmentTypeId;
 		this.equipmentStatusId = equipmentStatusId;
 		this.isScrapId = isScrapId;
+		this.changeMoney = d;
 	}
 	public int getEquipmentNo() {
 		return equipmentNo;
@@ -56,4 +60,10 @@ public class Equipment {
 		this.isScrapId = isScrapId;
 	}
 	
+	public double getChangeMoney() {
+		return changeMoney;
+	}
+	public void setChangeMoney(double changeMoney) {
+		this.changeMoney = changeMoney;
+	}
 }

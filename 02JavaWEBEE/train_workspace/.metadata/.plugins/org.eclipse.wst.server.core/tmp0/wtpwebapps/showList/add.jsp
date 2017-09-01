@@ -21,18 +21,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <form action="equipment" method="post">
     	<table width="80%" align="center">
     	      <tr >
-    	          <td colspan="2"><h3>添加商品</h3></td>
+    	          <td colspan="2"><h3>添加实验设备</h3></td>
     	      </tr>
     	      <tr>
-    	      		<td>商品编号<input type="hidden" name="op" value="add"></td>
+    	      		<td>设备编号<input type="hidden" name="op" value="add"></td>
     	      		<td><input type="text" name="id"></td>
     	      </tr>
     	      <tr>
-    	      		<td>商品名称</td>
+    	      		<td>设备名称</td>
     	      		<td><input type="text" name="equipmentName"></td>
     	      </tr>
     	      <tr>
-    	      		<td>负责人</td>
+    	      		<td>领用人</td>
     	      		<td><input type="text" name="person"></td>
     	      </tr>
     	      <tr>
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	      </tr>
     	      
     	      <tr>
-    	      		<td>商品状态</td>
+    	      		<td>设备状态</td>
     	      		<td>
     	      		    <select name="equipmentStatusId">
     	      				<c:forEach items="${statuslist }" var="bean">
@@ -56,8 +56,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	      			</select>
     	      		</td>
     	      </tr>
+    	       <tr>
+    	      		<td>更换费用</td>
+    	      		<td><input type="text" name="changeMoney" ></td>
+    	      </tr>
     	      <tr>
-    	      		<td>是否可售</td>
+    	      		<td>是否报废</td>
     	      		<td>
     	      		    <select name="isScrapId">
     	      				<c:forEach items="${slist }" var="bean">

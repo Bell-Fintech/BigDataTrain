@@ -1,4 +1,0 @@
-c3p0.driverclass=com.mysql.jdbc.Driver
-c3p0.jdbcUrl=jdbc:mysql://localhost:3306/train_mysql?characterEncoding=UTF8
-c3p0.user=root
-c3p0.password=

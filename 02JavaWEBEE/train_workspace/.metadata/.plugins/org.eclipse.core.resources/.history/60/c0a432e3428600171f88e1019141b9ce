@@ -1,6 +1,0 @@
-package zd.model;
-
-public class Product {
-	private int id;
-	
-}

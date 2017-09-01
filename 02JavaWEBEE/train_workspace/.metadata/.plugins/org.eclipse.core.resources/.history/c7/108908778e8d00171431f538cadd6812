@@ -1,0 +1,64 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf8"%>
+<%@ page import="com.eems.entity.*,java.sql.*"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+<title>汇总</title>
+
+</head>
+<body>
+
+	<%  
+    //装载MySQL5.5的JDBC驱动  
+    Class.forName("com.mysql.jdbc.Driver").newInstance();  
+    //建立数据库连接  
+    String url ="jdbc:mysql://localhost:3306/List?user=root&password=&characterEncoding=utf8";  
+    Connection conn= DriverManager.getConnection(url);  
+    PreparedStatement pstat = null;  
+    ResultSet rs = null;  
+      
+    String sql = null;  
+    String op = request.getParameter("op");  
+      
+    //将商品放入购物车  
+    if (op.equals("add")){  
+        //从商品库中取出所选购商品的数据  
+        String id = request.getParameter("id");  
+        String name=null,price=null;  
+        sql = "select * from equipment where equipmentNo=?";  
+        pstat = conn.prepareStatement(sql);  
+        pstat.setString(1,id);  
+        rs = pstat.executeQuery();  
+        if (rs.next()){  
+        	    
+            name = rs.getString("equipmentName").trim();  
+            price = rs.getString("changeMoney").trim();  
+        }  
+        rs.close();  
+        pstat.close();  
+          
+        //将所选购商品加入到购物车中  
+        sql = "insert into cart values(?,?,?,?,?,?)";  
+        pstat = conn.prepareStatement(sql); 
+        psta.setInt(1,id)
+        pstat.setString(1,name);  
+        pstat.setString(2,price);  
+        pstat.setInt(3,1);  
+        pstat.setString(4,price);  
+        pstat.executeUpdate();  
+        pstat.close();  
+          
+        //关闭数据库连接  
+        conn.close();  
+          
+        //重定向到购物车页面  
+        response.sendRedirect("cart.jsp");  
+    }   
+    
+      
+    
+%>   
+</body>
+</html>
