@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <public publicId="-//mybatis.org//DTD Config 3.0//EN" uri="file:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/08-8.28-9.2/16/dtd/mybatis-3-config.dtd" webURL="http://mybatis.org/dtd/mybatis-3-config.dtd&#13;mybatis-3-config.dtd"/>
+  <public publicId="-//mybatis.org//DTD Mapper 3.0//EN" uri="file:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/08-8.28-9.2/16/dtd/mybatis-3-mapper.dtd" webURL="http://mybatis.org/dtd/mybatis-3-mapper.dtd"/>
+</catalog>

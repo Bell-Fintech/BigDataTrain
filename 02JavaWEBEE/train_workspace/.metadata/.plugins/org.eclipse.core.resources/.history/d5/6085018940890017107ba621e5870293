@@ -1,5 +1,0 @@
-package zd.servlet;
-
-public interface userServiece {
-
-}

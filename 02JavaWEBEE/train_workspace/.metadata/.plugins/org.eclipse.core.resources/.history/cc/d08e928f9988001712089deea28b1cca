@@ -1,5 +1,0 @@
-aaa=src
-driverClass=com.mysql.jdbc.Driver
-url=jdbc:mysql://localhost:3306/train_mysql?characterEncoding=UTF8
-username=root
-password=

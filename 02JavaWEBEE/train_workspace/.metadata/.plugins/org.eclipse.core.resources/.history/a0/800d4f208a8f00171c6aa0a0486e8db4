@@ -1,0 +1,25 @@
+package zd.test;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import zd.model.User;
+import zd.service.UserService;
+import zd.service.UserServiceImpl;
+
+public class TestSql {
+	@Test
+	public void testFindUserById(){
+		UserService userService=new UserServiceImpl();
+		User user=userService.findUserById(1);
+		System.out.println(user);
+	}
+
+	@Test
+	public void testFindUserByUsername(){
+		UserService userService=new UserServiceImpl();
+		List<User> list=userService.findUserByUsername("张");
+		System.out.println(list);
+	}
+	}

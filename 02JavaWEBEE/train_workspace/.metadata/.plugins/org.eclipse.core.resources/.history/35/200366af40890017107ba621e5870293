@@ -1,5 +1,0 @@
-package service;
-
-public interface userServiece {
-	public int register(User user);
-}

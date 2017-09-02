@@ -1,0 +1,8 @@
+package javaBasic.test;
+
+public class Test {
+	@Tes
+	public void testInsert(){
+		
+	}
+}

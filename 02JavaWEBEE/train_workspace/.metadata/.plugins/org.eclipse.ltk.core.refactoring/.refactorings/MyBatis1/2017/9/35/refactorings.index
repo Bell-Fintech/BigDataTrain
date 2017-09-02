@@ -1,0 +1,7 @@
+1504227579930	Extract method 'sort'
+1504227773476	Rename package 'java.test'
+1504228268993	Extract method 'writeToFile'
+1504258217226	Rename type 'user'
+1504258417217	Delete element
+1504313179995	Rename type 'Test'
+1504320199775	Copy compilation unit

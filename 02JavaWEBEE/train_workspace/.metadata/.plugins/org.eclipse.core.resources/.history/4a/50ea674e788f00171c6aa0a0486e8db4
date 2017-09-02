@@ -1,0 +1,12 @@
+package javaBasic.test;
+
+import org.apache.ibatis.io.Resources;
+import org.junit.Test;
+
+public class TestUser {
+	@Test
+	public void testInsert(){
+		InputStream in=Resources.getResourceAsReader("MyBatis.xml");
+		
+	}
+}

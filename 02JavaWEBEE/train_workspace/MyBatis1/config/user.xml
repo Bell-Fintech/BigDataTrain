@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper代表映射，该文件和一张表有映射关系 -->
+<!-- 以数据库删除为例 -->
+<!-- namespace属性是为了给该mapper进行分类管理,也可以看做是该mapper文件的唯一标示 -->
+<mapper namespace="user">
+	<!-- id属性代表该sql（该statement）的唯一标示,parameterType代表参数类型，代表输入参数 sql语句当中接收参数，使用#{变量名}代表占位符的意思,简单数据类型(int 
+		short long char String date) value来接收参数 -->
+	<delete id="deleteUserById" parameterType="java.lang.Integer">
+		delete from user where
+		id=#{value}
+	</delete>
+	<!-- string 别名 -->
+	<select id="selectUserByUsername" parameterType="string"
+		resultType="javaBasic.test.User">
+		select * from user where name like "%${value}%"
+	</select>
+	<insert id="insertUser" parameterType="javaBasic.test.User">
+		<selectKey keyProperty="id" order="AFTER" resultType="int">
+			select
+			last_insert_id()
+		</selectKey>
+		insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+	</insert>
+	<update id="updateUser" parameterType="user">
+		update user set name=#{name} where id=#{id}
+	</update>
+</mapper>

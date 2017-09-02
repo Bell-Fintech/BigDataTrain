@@ -1,0 +1,27 @@
+package zd.service;
+
+import java.util.List;
+
+import zd.model.User;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public User findUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> findUserByUsername(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addUser(User user) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

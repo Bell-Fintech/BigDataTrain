@@ -1,0 +1,5 @@
+package zd.service;
+
+public interface UserService {
+
+}

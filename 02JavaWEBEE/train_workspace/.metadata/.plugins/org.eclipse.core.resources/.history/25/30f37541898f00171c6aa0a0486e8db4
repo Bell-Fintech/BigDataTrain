@@ -1,0 +1,10 @@
+package zd.test;
+
+public class TestSql {
+	@Test
+	public void test1(){
+		UserService userService=new UserServiceImpl();
+		User user=userService.findUserById(3);
+		System.out.println(user);
+	}
+}
