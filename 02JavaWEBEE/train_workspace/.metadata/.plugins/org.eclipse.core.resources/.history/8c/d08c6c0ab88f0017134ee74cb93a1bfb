@@ -1,0 +1,35 @@
+package cn.edu360.mybatis.service.impl;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+
+import cn.edu360.mybatis.dao.UserDao;
+import cn.edu360.mybatis.model.User;
+import cn.edu360.mybatis.service.UserService;
+import cn.edu360.mybatis.util.MybatisUtil;
+
+public class UserServiceImpl implements UserService {
+
+	public User findUserById(int id) {
+		SqlSession session=MybatisUtil.getFactory().openSession();
+		UserDao daili=session.getMapper(UserDao.class);
+		/**
+		 * session.getMapper方法是通过mybatis框架获取传入类型的接口的代理实现类对象
+		 * 代理实现类当中封装了如何找到mapper文件,如果通过方法名找到对应的sql（statement）
+		 * 又包括了查询结果集到model的映射
+		 */
+		User user=daili.findUserById(id);
+		return user;
+		
+	}
+
+	public List<User> findUserByUsername(String name) {
+		return null;
+	}
+
+	public void addUser(User user) {
+		
+   }
+
+}

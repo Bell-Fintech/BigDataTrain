@@ -1,0 +1,20 @@
+常用的域对象
+    request 请求发起的时候,tomcat服务器创建该对象，当做出响应的一刹那，就失效了
+    session session是tomcat服务器主动创建的，它是会话对象，相当于每个客户端的私人仓库。保存在tomcat的内存当中的，是非常稀缺宝贵的资源。session的生命周期是由服务器决定的，两种方式可以设置session的生命周期,1:session的api
+    提供了设置session时间的方法(秒)2:通过配置web.xml指定该项目的session的超时时间(分钟),如果不配置默认是30分钟.
+    request.getSession()方法，这个方法会获取tomcat给该用户创建的session对象,如果session不存在null,就主动创建一个session
+    cookie 也是会话对象，来源自服务器的发送(response.addCookie(new Cookie()))，保存在浏览器当中，既可以保存在浏览器的内存，又可以保存在浏览器的内存.cookie只能存储key value结构的字符串,而且存储的数据量很小不超过2Kb.
+    cookie和session的关系  当tomcat服务器主动创建session的时候，会隐形的向浏览器发送一个cookie，该cookie的key是(JSESSIONID) value是session的id
+    该cookie是存储在浏览器的内存当中的.所以不同的客户端访问tomcat的时候。tomcat都会找到对应的session对象.
+
+    servletContext
+     Context叫上下文，每一个web项目都对应着一个context。servletContext对象
+     是servlet项目在启动完毕之后创建的，tomcat关闭时销毁。它是一个公共的仓库,意味着该项目下面所有的servlet对象共享同一个servletcontext资源.
+
+     请求的转发和重定向
+      request.getRequestDispatcher("").forword();
+      请求的转发，还是同一个request，request作用域当中的数据还在，浏览器的url是不改变的
+      response.sendRedirect("")  重定向就意味着先响应，后定向(改变浏览器的url)，再请求，再响应.本质上是两次请求,意味着request的数据失效了.
+
+
+      

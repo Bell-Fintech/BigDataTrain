@@ -1,0 +1,17 @@
+package cn.edu360.mybatis.test;
+
+import org.junit.Test;
+
+import cn.edu360.mybatis.model.User;
+import cn.edu360.mybatis.service.UserService;
+import cn.edu360.mybatis.service.impl.UserServiceImpl;
+
+public class Test1 {
+	@Test
+	public void test1(){
+		UserService userService=new UserServiceImpl();
+		User user=userService.findUserById(3);
+		System.out.println(user);
+	}
+
+}

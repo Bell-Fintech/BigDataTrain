@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import zd.model.User;
 import zd.service.UserService;
-import zd.service.UserServiceImpl;
+import zd.service.impl.UserServiceImpl;
 
 public class TestSql {
 	@Test

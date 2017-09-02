@@ -1,0 +1,25 @@
+package cn.edu360.mybatis.vo;
+
+import cn.edu360.mybatis.model.Items;
+import cn.edu360.mybatis.model.Orders;
+
+public class OrdersVo {
+	private Items items;
+	private Orders orders;
+	public Items getItems() {
+		return items;
+	}
+	public void setItems(Items items) {
+		this.items = items;
+	}
+	public Orders getOrders() {
+		return orders;
+	}
+	public void setOrders(Orders orders) {
+		this.orders = orders;
+	}
+	
+	
+	
+
+}

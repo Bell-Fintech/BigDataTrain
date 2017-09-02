@@ -1,0 +1,11 @@
+package cn.edu360.mybatis.service;
+
+import java.util.List;
+
+import cn.edu360.mybatis.model.Orders;
+import cn.edu360.mybatis.vo.OrdersVo;
+
+public interface OrdersService {
+	public List<Orders> findOrdersByVo(OrdersVo vo);
+
+}
