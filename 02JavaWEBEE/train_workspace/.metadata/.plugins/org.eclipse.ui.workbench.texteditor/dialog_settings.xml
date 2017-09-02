@@ -16,16 +16,18 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="设备" key="selection"/>
+		<item value="zd" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="cn.edu360.mybatis"/>
 			<item value="购物"/>
 			<item value="商品"/>
 		</list>
 		<list key="replacehistory">
+			<item value="zd"/>
 			<item value="设备"/>
 		</list>
 	</section>

@@ -55,9 +55,9 @@
 <fullyQualifiedTypeName name="zd.dao.UserDao"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="zd.utils.MyBatisUtils"/>
-<fullyQualifiedTypeName name="zd.service.UserService"/>
 <fullyQualifiedTypeName name="zd.service.UserServiceImpl"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="zd.model.User"/>
+<fullyQualifiedTypeName name="zd.service.UserService"/>
 </qualifiedTypeNameHistroy>
