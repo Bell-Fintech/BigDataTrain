@@ -1,0 +1,8 @@
+package zd.vo;
+
+import java.util.List;
+
+public class ItemsVo {
+	private List<Integer>ids;
+	
+}

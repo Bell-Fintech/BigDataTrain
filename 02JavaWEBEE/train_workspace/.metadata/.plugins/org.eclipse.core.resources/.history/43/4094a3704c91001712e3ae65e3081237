@@ -1,0 +1,23 @@
+package zd.test;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import zd.model.Orders;
+import zd.model.User;
+import zd.service.OrdersService;
+import zd.service.UserService;
+import zd.service.impl.OrdersServiceImpl;
+import zd.service.impl.UserServiceImpl;
+
+public class Test8 {
+	public static void main(String[] args) {
+		OrdersService ordersService=new OrdersServiceImpl();
+		List<Orders> list=ordersService.findAllOrdersAndUser();
+		for(Orders orders:list){
+			System.out.println(orders);
+		}
+
+	}
+}

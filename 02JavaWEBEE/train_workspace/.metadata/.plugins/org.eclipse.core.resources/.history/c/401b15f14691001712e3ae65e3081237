@@ -1,0 +1,5 @@
+package zd.dao;
+
+public class UserDao<T> extends baseDao{
+
+}

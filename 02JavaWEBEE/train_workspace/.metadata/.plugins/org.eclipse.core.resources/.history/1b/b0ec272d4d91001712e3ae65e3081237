@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zd.dao.OrdersDao">
+ <select id="findOrdersByVo" parameterType="ordersVo" resultType="orders">
+  SELECT orders.* FROM orders,orders_items_relation,items
+  <where>
+  and orders.orders_id=orders_items_relation.orders_id AND 
+  orders_items_relation.items_id=items.items_id
+  <if test="orders!=null">
+  <if test="orders.orders_id!=null and orders.orders_id!=0">
+  and orders.orders_id = #{orders.orders_id}
+  </if>
+  </if>
+  <if test="items!=null">
+  <if test="items.items_name!=null and items.items_name !=''">
+  and items.items_name like '%${items.items_name}%'
+  </if>
+  <if test="items.price!=null and items.price !=''">
+  and items.price =#{items.price}
+  </if>
+  </if>
+  </where>
+ 
+ </select>
+<select id="findAllOrdersAndUser" resultMap="ordersMap">
+SELECT orders.*,user.* FROM orders,USER WHERE orders.user_id=user.user_id
+</select>
+
+<resultMap type="orders" id="ordersMap">
+  <id column="orders_id" property="orders_id"/>
+  <result column="count" property="count"/>
+  <result column="status" property="status"/>
+  <!-- 使用association标签配置一对一的映射关系 -->
+  <association property="user" javaType="user">
+  <id column="user_id" property="user_id"/>
+  <result column="username" property="username"/>
+  <result column="password" property="password"/>
+  <result column="age" property="age"/>
+  </association>
+</resultMap>
+<select id="findAllOrdersAndItemsAndPosts" resultMap="ordersItemsPostsMap">
+SELECT orders.*, items.*,posts.* from orders,items,posts,orders_items_relation 
+WHERE orders_items_relation.orders_id=orders.orders_id 
+and orders_items_relation.items_id=items.items_id
+AND orders.post_id=posts.id
+</select>
+<resultMap type="orders" id="ordersItemsPostsMap">
+  <id column="orders_id" property="orders_id"/>
+  <result column="count" property="count"/>
+  <result column="status" property="status"/>
+  <!-- 使用association标签配置一对一的映射关系 -->
+  <association property="posts" javaType="posts">
+  <id column="id" property="id"/>
+   <result column="address" property="address"/>
+    <result column="phone" property="phone"/>
+  </association>
+  <collection property="itemss" ofType="items">
+  <id column="items_id" property="itemsid"/>
+   <result column="items_name" property="items_name"/>
+    <result column="price" property="price"/>
+</collection>
+</resultMap>
+
+</mapper>
+
+

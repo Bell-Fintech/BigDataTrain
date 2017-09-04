@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zd.dao.PostDao">
+<!-- 解决数据库结果集和实体类对象属性名不一致的两种方式
+     1:针对不一样的列起别名
+     2:使用resultMap
+ -->
+ <select id="findPostsByOrdersId" parameterType="int" resultType="posts">
+ 	select posts.id,posts.post_name,posts.address,post.phone from posts,orders where orders.orders_id=#{id} and posts.id=orders.post_id
+ </select>
+</mapper>

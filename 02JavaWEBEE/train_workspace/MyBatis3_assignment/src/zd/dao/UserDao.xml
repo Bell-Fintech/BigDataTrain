@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zd.dao.UserDao">
+
+<select id="findUserById" parameterType="int" resultType="user">
+ select * from user where user_id = #{user_id}
+</select>
+<!--  -->
+<select id="findUserByUsername" parameterType="string" resultType="user">
+ select * from user where username like '%${value}%'
+</select>
+
+<insert id="addUser" parameterType="user">
+ insert into user (username,age,password) values (#{username},#{age},#{password})
+
+</insert>
+<select id="findUsersAndOrders" resultMap="userOrdersMap">
+
+select user.*,orders.* from user,orders where orders.user_id=user.user_id
+</select>
+<resultMap type="user" id="userOrdersMap">
+<id column="user_id" property="user_id"/>
+<result column="username" property="username"/>
+<result column="age" property="age"/>
+<result column="password" property="password"/>
+<!-- collection用于完成一对高的映射,注意: ofType 类型-->
+<collection property="orderss" ofType="orders">
+  <id column="orders_id" property="orders_id"/>
+  <result column="count" property="count"/>
+   <result column="status" property="status"/>
+</collection>
+
+</resultMap>
+</mapper>
+
+

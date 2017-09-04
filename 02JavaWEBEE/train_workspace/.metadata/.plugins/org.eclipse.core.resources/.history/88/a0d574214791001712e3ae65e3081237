@@ -1,0 +1,39 @@
+package zd.dao;
+
+import zd.model.Items;
+import zd.model.User;
+
+public abstract class UserDao<T> extends baseDao{
+
+	@Override
+	int deleteByPrimaryKey(Integer id) {
+		return 0;
+	}
+
+	@Override
+	int insert(User user) {
+		return 0;
+	}
+
+	@Override
+	int insertSelective(Object t) {
+		return 0;
+	}
+
+	@Override
+	Items selectByPrimaryKey(Integer id) {
+		return null;
+	}
+
+	@Override
+	int updateByPrimaryKeySelective(Object t) {
+		return 0;
+	}
+
+	@Override
+	int updateByPrimaryKey(Object t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

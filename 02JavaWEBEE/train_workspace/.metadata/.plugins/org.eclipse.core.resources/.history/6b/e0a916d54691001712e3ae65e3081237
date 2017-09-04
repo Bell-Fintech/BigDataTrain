@@ -1,0 +1,18 @@
+package zd.dao;
+
+import zd.model.Items;
+
+public class baseDao<T> {
+	int deleteByPrimaryKey(Integer id);
+
+    int insert(T t);
+
+    int insertSelective(T t);
+
+    Items selectByPrimaryKey(Integer id);
+
+    int updateByPrimaryKeySelective(T t);
+
+    int updateByPrimaryKey(T t);
+	
+}

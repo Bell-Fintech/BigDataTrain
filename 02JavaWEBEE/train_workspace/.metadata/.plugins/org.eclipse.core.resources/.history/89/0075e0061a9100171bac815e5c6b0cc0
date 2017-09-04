@@ -1,0 +1,13 @@
+package zd.service.impl;
+
+import zd.model.Post;
+import zd.service.PostsService;
+
+public class PostsServiceImpl implements PostsService {
+
+	@Override
+	public Post findPostsByOrdersId(int id) {
+		return null;
+	}
+
+}
