@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemsList>
+<item count="2">
+<id>1</id>
+<name>iphone5</name>
+<price>1000</price>
+</item>
+<item count="3">
+<id>2</id>
+<name>iphone6</name>
+<price>3000</price>
+</item>
+<item count="4">
+<id>3</id>
+<name>iphone7</name>
+<price>5000</price>
+</item>
+</itemsList>

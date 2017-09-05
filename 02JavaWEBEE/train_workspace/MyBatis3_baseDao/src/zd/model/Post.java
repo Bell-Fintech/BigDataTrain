@@ -40,4 +40,12 @@ public class Post {
     public void setPhone(String phone) {
         this.phone = phone == null ? null : phone.trim();
     }
+
+	@Override
+	public String toString() {
+		return "Post [id=" + id + ", postName=" + postName + ", address="
+				+ address + ", phone=" + phone + "]";
+	}
+    
+    
 }

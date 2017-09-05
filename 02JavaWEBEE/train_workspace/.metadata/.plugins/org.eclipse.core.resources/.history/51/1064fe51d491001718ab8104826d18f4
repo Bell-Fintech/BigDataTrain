@@ -1,0 +1,11 @@
+package zd.dom4j;
+
+import org.dom4j.io.SAXReader;
+
+public class Dom4JTest {
+public static void main(String[] args) {
+	SAXReader sax=new SAXReader();
+	InputStream in=Dom4JTest.class.getResourceAsStream("items.xml");
+	
+}
+}

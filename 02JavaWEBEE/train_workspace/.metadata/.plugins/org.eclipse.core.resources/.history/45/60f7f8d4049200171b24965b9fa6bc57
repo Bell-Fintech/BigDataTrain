@@ -1,0 +1,8 @@
+package cn.edu360.mybatis.dao;
+
+import cn.edu360.mybatis.base.BaseDao;
+import cn.edu360.mybatis.model.Items;
+
+public interface ItemsMapper extends BaseDao<Items> {
+    
+}

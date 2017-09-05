@@ -1,5 +1,7 @@
 package zd.model;
 
+import java.util.List;
+
 public class Orders {
     private Integer ordersId;
 
@@ -10,6 +12,8 @@ public class Orders {
     private Integer userId;
 
     private Integer postId;
+    private List<Items> itemss;
+    private Post post;
 
     public Integer getOrdersId() {
         return ordersId;
@@ -50,4 +54,29 @@ public class Orders {
     public void setPostId(Integer postId) {
         this.postId = postId;
     }
+
+	public List<Items> getItemss() {
+		return itemss;
+	}
+
+	public void setItemss(List<Items> itemss) {
+		this.itemss = itemss;
+	}
+
+	public Post getPost() {
+		return post;
+	}
+
+	public void setPost(Post post) {
+		this.post = post;
+	}
+
+	@Override
+	public String toString() {
+		return "Orders [ordersId=" + ordersId + ", count=" + count
+				+ ", status=" + status + ", userId=" + userId + ", postId="
+				+ postId + ", itemss=" + itemss + ", post=" + post + "]";
+	}
+    
+    
 }

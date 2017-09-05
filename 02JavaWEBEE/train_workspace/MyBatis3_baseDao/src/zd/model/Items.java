@@ -30,4 +30,12 @@ public class Items {
     public void setPrice(String price) {
         this.price = price == null ? null : price.trim();
     }
+
+	@Override
+	public String toString() {
+		return "Items [itemsId=" + itemsId + ", itemsName=" + itemsName
+				+ ", price=" + price + "]";
+	}
+    
+    
 }
