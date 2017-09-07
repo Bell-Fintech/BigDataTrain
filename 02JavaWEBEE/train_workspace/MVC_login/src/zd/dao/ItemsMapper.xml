@@ -68,4 +68,26 @@
       price = #{price,jdbcType=VARCHAR}
     where items_id = #{itemsId,jdbcType=INTEGER}
   </update>
+  <select id="findItemsByVo" parameterType="itemsVo" resultMap="BaseResultMap">
+  select * from items
+  <where>
+  <if test="itemsName!=null and itemsName!=''">
+  and items_name like '%${itemsName}%'
+  </if>
+  <if test="minPrice!=null and minPrice!=''">
+  and price >=${minPrice}
+  </if>
+  <if test="maxPrice!=null and maxPrice!=''">
+  and price &lt; =${maxPrice}
+  </if>
+  </where>
+  
+  </select>
+  
+  <select id="findItemsByCart" parameterType="string"  resultMap="BaseResultMap">
+  select * from items
+  <where>
+  and items_id in (${value})
+  </where>
+  </select>
 </mapper>

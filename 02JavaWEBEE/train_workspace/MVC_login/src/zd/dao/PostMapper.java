@@ -1,5 +1,7 @@
 package zd.dao;
 
+import java.util.List;
+
 import zd.model.Post;
 
 public interface PostMapper {
@@ -14,4 +16,6 @@ public interface PostMapper {
     int updateByPrimaryKeySelective(Post record);
 
     int updateByPrimaryKey(Post record);
+    
+    public List<Post> findPostsByUserId(int userId);
 }

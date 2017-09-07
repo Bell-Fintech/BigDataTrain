@@ -1,6 +1,9 @@
 package zd.dao;
 
+import java.util.List;
+
 import zd.model.Items;
+import zd.vo.ItemsVo;
 
 public interface ItemsMapper {
     int deleteByPrimaryKey(Integer itemsId);
@@ -14,4 +17,8 @@ public interface ItemsMapper {
     int updateByPrimaryKeySelective(Items record);
 
     int updateByPrimaryKey(Items record);
+    
+    public List<Items> findItemsByVo(ItemsVo vo);
+    
+    public List<Items> findItemsByCart(String ids);
 }

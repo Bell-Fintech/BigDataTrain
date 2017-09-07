@@ -79,4 +79,7 @@
       phone = #{phone,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="findPostsByUserId" parameterType="int" resultMap="BaseResultMap">
+  select * from posts where user_id = #{id}
+  </select>
 </mapper>

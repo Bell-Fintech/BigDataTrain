@@ -1,0 +1,15 @@
+package zd.service.impl;
+
+import java.util.List;
+
+import zd.model.Post;
+import zd.service.PostService;
+
+public class PostServiceImpl implements PostService {
+
+	@Override
+	public List<Post> findPostsByUserId(int userId) {
+		return null;
+	}
+
+}

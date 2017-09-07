@@ -1,13 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+pageContext.setAttribute("path", path);
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="<%=basePath%>">
     
     <title>My JSP 'index.jsp' starting page</title>
 	<meta http-equiv="pragma" content="no-cache">
@@ -21,8 +20,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+  <center>
     欢迎${user.username}访问 <br>
-    <a href="">商品管理</a><br>
+    <a href="${path}/itemsList.shtml">商品管理</a><br>
     <a href="${path}/ordersList.shtml">订单管理</a>
+    </center>
   </body>
 </html>

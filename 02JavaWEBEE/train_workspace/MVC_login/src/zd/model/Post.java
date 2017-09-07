@@ -8,8 +8,17 @@ public class Post {
     private String address;
 
     private String phone;
+private int userId;
 
-    public Integer getId() {
+    public int getUserId() {
+	return userId;
+}
+
+public void setUserId(int userId) {
+	this.userId = userId;
+}
+
+	public Integer getId() {
         return id;
     }
 
