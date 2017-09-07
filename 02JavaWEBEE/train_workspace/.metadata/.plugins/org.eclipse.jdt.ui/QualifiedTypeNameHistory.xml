@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="zd.demo.MyDbUtils"/>
-<fullyQualifiedTypeName name="org.dom4j.Attribute"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="zd.factory.BeanFactory"/>
-<fullyQualifiedTypeName name="zd.bean.p1"/>
-<fullyQualifiedTypeName name="zd.bean.p2"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
@@ -38,8 +31,6 @@
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="zd.service.UserService"/>
 <fullyQualifiedTypeName name="zd.model.Post"/>
-<fullyQualifiedTypeName name="zd.util.MybatisUtil"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="zd.dao.PostsDao"/>
 <fullyQualifiedTypeName name="zd.service.impl.PostsServiceImpl"/>
 <fullyQualifiedTypeName name="zd.service.PostsService"/>
@@ -48,16 +39,25 @@
 <fullyQualifiedTypeName name="zd.vo.ItemsVo"/>
 <fullyQualifiedTypeName name="zd.service.impl.ItemsServiceImpl"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="zd.model.User"/>
 <fullyQualifiedTypeName name="zd.model.Posts"/>
 <fullyQualifiedTypeName name="org.dom4j.io.SAXReader"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="org.dom4j.Document"/>
 <fullyQualifiedTypeName name="org.dom4j.Element"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="zd.util.MybatisUtil"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="zd.dao.OrdersMapper"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="zd.vo.OrdersVo"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="zd.model.User"/>
+<fullyQualifiedTypeName name="zd.service.OrdersService"/>
+<fullyQualifiedTypeName name="zd.service.impl.OrdersServiceImpl"/>
+<fullyQualifiedTypeName name="zd.model.Orders"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

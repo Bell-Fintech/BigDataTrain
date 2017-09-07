@@ -1,0 +1,31 @@
+<%@ page language="Java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<h3>订单管理</h3>
+		<form method="post" action="${path}/ordersList.shtml">
+			订单号:<input type="text" name="ordersId" value="${vo.ordersId}" />
+			商品名称:<input type="text" name="itemsName" value="${vo.itemsName}" />
+			商品价格:<input type="text" name="price" value="${vo.price}" /> <input
+				type="submit" value="搜索" />
+		</form>
+		<table boder="1">
+			<tr>
+				<td>订单编号</td>
+				<td>商品件数</td>
+				<td>状态</td>
+				<td>商品明细</td>
+				<td>收货人</td>
+			</tr>
+			
+		</table>
+	</center>
+</body>
+</html>

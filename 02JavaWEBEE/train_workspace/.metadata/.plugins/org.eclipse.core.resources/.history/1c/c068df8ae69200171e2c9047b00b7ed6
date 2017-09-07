@@ -1,0 +1,16 @@
+package zd.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class OrdersAction {
+	/**
+	 * springmvc提供了参数绑定的机制，如果参数的名字和对象的属性名一样，
+	 * 就会自动绑定到对象的属性当中
+	 */
+	@RequestMapping("/ordersList.shtml")
+public String ordersList(OrdersVo vo,HttpSession session,Model model){
+		return null;
+	}	
+}

@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Tue Sep 05 11:28:49 CST 2017
-org.eclipse.jst.jee.server\:/binary\:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/MVC/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar=WEB-INF/lib/spring-web-4.0.0.RELEASE.jar
-org.eclipse.jst.jee.server\:/binary\:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/MVC/WebContent/WEB-INF/lib/log4j-core-2.0-rc1.jar=WEB-INF/lib/log4j-core-2.0-rc1.jar
+#Wed Sep 06 18:08:42 CST 2017
+org.eclipse.jst.jee.server\:/binary\:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/MVC_login/WebContent/WEB-INF/lib/log4j-core-2.0-rc1.jar=WEB-INF/lib/log4j-core-2.0-rc1.jar
+org.eclipse.jst.jee.server\:/binary\:/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/train_workspace/MVC_login/WebContent/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar=WEB-INF/lib/spring-web-4.0.0.RELEASE.jar
