@@ -37,6 +37,9 @@
       <if test="price != null" >
         price,
       </if>
+       <if test="url != null" >
+       url,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="itemsId != null" >
@@ -48,8 +51,12 @@
       <if test="price != null" >
         #{price,jdbcType=VARCHAR},
       </if>
+      <if test="url != null" >
+        #{url,jdbcType=VARCHAR},
+      </if>
     </trim>
   </insert>
+  
   <update id="updateByPrimaryKeySelective" parameterType="zd.model.Items" >
     update items
     <set >

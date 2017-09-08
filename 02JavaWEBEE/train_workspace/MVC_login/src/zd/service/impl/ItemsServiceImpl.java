@@ -26,4 +26,28 @@ public class ItemsServiceImpl implements ItemsService {
 		return daili.findItemsByCart(ids);
 	}
 
+	@Override
+	public Items findItemsBySelect(int id) {
+		SqlSession session = MybatisUtil.getFactory().openSession();
+		ItemsMapper daili = session.getMapper(ItemsMapper.class);
+		session.commit();
+		return daili.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public void updateItemsBySelective(Items items) {
+		SqlSession session = MybatisUtil.getFactory().openSession();
+		ItemsMapper daili = session.getMapper(ItemsMapper.class);
+		daili.updateByPrimaryKeySelective(items);
+		session.commit();
+	}
+
+	@Override
+	public void insertBySelective(Items items) {
+		SqlSession session = MybatisUtil.getFactory().openSession();
+		ItemsMapper daili = session.getMapper(ItemsMapper.class);
+		daili.insertSelective(items);
+		session.commit();
+	}
+
 }

@@ -1,6 +1,9 @@
 package zd.controller;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -9,6 +12,8 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import zd.model.Items;
 import zd.model.Post;
@@ -21,7 +26,10 @@ import zd.vo.ItemsVo;
 
 @Controller
 public class ItemsAction {
-	@RequestMapping("/itemsList.shtml")
+	//  /Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/pic
+	private static final String VIR_PATH="/pic/";
+	private static final String REAL_PATH="/Users/Zd/Desktop/GitHub/BigDataTrain/02JavaWEBEE/pic/";
+	@RequestMapping(value="/itemsList.shtml")
 	public String itemsList(ItemsVo itemsVo, HttpServletRequest request) {
 		ItemsService itemsService = new ItemsServiceImpl();
 		List<Items> itemsList = itemsService.findItemsByVo(itemsVo);
@@ -82,4 +90,39 @@ public class ItemsAction {
 		}
 		return "redirect:cart.shtml";
 	}
+	//
+	@RequestMapping("/toUpdateItems.shtml")
+	public String toUpdateItems(@RequestParam(value="id",required=true)int id,HttpServletRequest request){
+		ItemsService itemsService=new ItemsServiceImpl();
+		Items items=itemsService.findItemsBySelect(id);
+		request.setAttribute("items",items);
+		return "toUpdateItems";
+	}
+	@RequestMapping("/updateItems.shtml")
+	public String updateItems(Items items){
+		ItemsService itemsService=new ItemsServiceImpl();
+		itemsService.updateItemsBySelective(items);
+		return "redirect:itemsList.shtml";
+	}
+	
+	@RequestMapping("/toAddItems.shtml")
+	public String toAddItems(){
+		return "addItems";
+	}
+	
+	@RequestMapping("/addItems.shtml")
+	public String addItems(MultipartFile file,Items items) throws Exception, IOException{
+		String oldName=file.getOriginalFilename();
+		String suffix=oldName.substring(oldName.lastIndexOf("."));
+		String prefix=UUID.randomUUID().toString();
+		String newName=prefix+suffix;
+		String realPath=REAL_PATH+newName;
+		file.transferTo(new File(realPath));
+		String virPath=VIR_PATH+newName;
+		items.setUrl(virPath);
+		ItemsService itemsService=new ItemsServiceImpl();
+		itemsService.insertBySelective(items);
+		return "redirect:itemsList.shtml";
+	}
+	
 }
