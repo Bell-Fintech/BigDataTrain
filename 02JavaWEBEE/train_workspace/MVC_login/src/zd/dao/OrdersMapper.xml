@@ -28,6 +28,9 @@
       #{userId,jdbcType=INTEGER}, #{postId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="zd.model.Orders" >
+  <selectKey keyProperty="ordersId" order="AFTER" resultType="int">
+  select LAST_INSERT_ID()
+  </selectKey>
     insert into orders
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="ordersId != null" >
@@ -124,4 +127,7 @@
     <result column="price" property="price" jdbcType="VARCHAR" />
     </collection>
   </resultMap>
+  <insert id="insertOrdersItemsRelation" parameterType="ordersItemsVo">
+  insert into orders_items_relation value (${ordersId},${itemsId})
+  </insert>
 </mapper>
