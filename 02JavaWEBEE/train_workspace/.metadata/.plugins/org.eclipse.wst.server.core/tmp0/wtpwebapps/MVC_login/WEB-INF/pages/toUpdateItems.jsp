@@ -19,7 +19,7 @@
 		<form action="${path}/updateItems.shtml" method="post">
 		<table border="1" width="800">
 			<tr style="width: 800px; height: 100px">
-			<input hidden="itemsId" name="itemsId" value="${items.itemsId}"/>
+			<input type="hidden" name="itemsId" value="${items.itemsId}"/>
 				<td>商品名称<input type="text" value="${items.itemsName}" name="itemsName" readonly/></td>
 			</tr>
 			<tr>

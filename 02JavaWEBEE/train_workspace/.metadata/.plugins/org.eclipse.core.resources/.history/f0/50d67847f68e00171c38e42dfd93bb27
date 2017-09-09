@@ -1,8 +1,0 @@
-package javaBasic.test;
-
-public class user {
-	private int id;
-	private String name;
-	private String pwd;
-	
-}

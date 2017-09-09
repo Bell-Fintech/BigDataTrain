@@ -1,7 +1,0 @@
-package javaBasic.test;
-
-public class Test {
-	public void testInsert(){
-		
-	}
-}

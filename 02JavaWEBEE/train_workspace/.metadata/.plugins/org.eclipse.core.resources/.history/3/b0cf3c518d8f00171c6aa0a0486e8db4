@@ -1,5 +1,0 @@
-1.config:必须为 源文件
-2.增删改操作必须commit
-3.单元测试可以选中一个方法单独执行
-4.session相当于一个事务，每一个事务都需要一个新的session
-5.在service的impl中写具体操作，不需要dao的impl。

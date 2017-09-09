@@ -1,8 +1,0 @@
-package javaBasic.test;
-
-public class TestUser {
-	@Test
-	public void testInsert(){
-		
-	}
-}

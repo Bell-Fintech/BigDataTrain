@@ -47,8 +47,8 @@
 		<form  class="form" method="post" >
 		    <p class="p3">用户登录</p>
 		    <img src="${path}/images/picture_10.gif" class="userimg"><br/>
-			<input type="text"  class="txt" placeholder="账号" name="username" id="username"><br/>
-			<input type="password"  class="psw" placeholder="密码" name="password" id="password"><br/>
+			<input type="text"  class="txt" placeholder="账号" name="username" id="username" value="zd"><br/>
+			<input type="password"  class="psw" placeholder="密码" name="password" id="password" value="111"><br/>
 			
 			<p class="p3" style="margin-top:-14px;"><span style="color:red" id="tips">${error}</span></p>
        		<p class="p3" style="margin-top:40px;margin-left:40px"><button type="button" onclick="login()">登录</button>  </p>

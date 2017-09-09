@@ -1,7 +1,0 @@
-package zd.dao;
-
-public interface UserDao {
-	public User findUserById(int id);
-	public List<User> findUserByUsername(String name);
-	public void addUser(User user);
-}
