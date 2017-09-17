@@ -1,5 +1,6 @@
 MODULES_MANAGER_V2
 bootstrap|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/bootstrap.py
+spider_img.getImg|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/spider_img/getImg.py
 urllib2_demo|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib2_demo.py
 urllib_demo|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo.py
 urllib_demo2|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/spider_basic/src/urllib_demo2.py

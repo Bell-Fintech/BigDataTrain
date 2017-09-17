@@ -1,0 +1,6 @@
+package zd.spring.dao;
+
+public interface UserDao {
+	public void sayHello();
+
+}

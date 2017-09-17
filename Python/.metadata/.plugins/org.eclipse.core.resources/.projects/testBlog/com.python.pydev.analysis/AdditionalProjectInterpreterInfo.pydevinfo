@@ -7,12 +7,12 @@ blog2.migrations.__init__|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTr
 blog2.views|1503317195000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/views.py
 blog.tests|1502970086000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/tests.py
 blog.migrations.0001_initial|1502971165000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/migrations/0001_initial.py
-blog2.__init__|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/__init__.py
 blog.admin|1503322769000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/admin.py
+blog2.__init__|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/__init__.py
 blog2.models|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/models.py
 testBlog.wsgi|1502969741000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/wsgi.py
 testBlog.urls|1503323677000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/urls.py
-blog.views|1503323336000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/views.py
+blog.views|1503324916000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/views.py
 testBlog.settings|1503319524000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/settings.py
 manage|1502969741000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/manage.py
 blog2.urls|1503316862000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/urls.py
@@ -20,7 +20,7 @@ blog.__init__|1502970086000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/t
 blog.migrations.0002_article|1503318872000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/migrations/0002_article.py
 blog2.tests|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/tests.py
 testBlog.__init__|1502969741000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/testBlog/__init__.py
-blog.urls|1503323704000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/urls.py
+blog.urls|1503324579000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/urls.py
 blog2.admin|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/admin.py
 blog2.apps|1503316679000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog2/apps.py
 blog.migrations.__init__|1502970086000000000|/Users/Zd/Desktop/GitHub/BigDataTrain/Python/testBlog/src/blog/migrations/__init__.py
@@ -56,8 +56,8 @@ bas|1|BASE_DIR!11@
 blo|4|Blog2Config!41@BlogPostAdmin!25@BlogConfig!49@BlogsPost!25@
 dat|1|DATABASES!11@
 deb|1|DEBUG!11@
+edi|2|edit_page!34@edit_action!34@
 imo|2|imooc!34@imooc!58@
-in|0|
 ind|1|index!34@
 ins|1|INSTALLED_APPS!11@
 lan|1|LANGUAGE_CODE!11@

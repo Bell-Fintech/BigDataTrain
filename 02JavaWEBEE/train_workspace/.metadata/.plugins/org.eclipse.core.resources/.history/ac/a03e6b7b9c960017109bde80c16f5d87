@@ -1,0 +1,6 @@
+package cn.edu360.spring.dao;
+
+public interface UserDao {
+	public void sayHello();
+
+}

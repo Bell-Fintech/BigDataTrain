@@ -1,9 +1,0 @@
-package zd.model;
-
-public class Post {
-	private int id;
-	private String postName;
-	private String address;
-	private String phone;
-	
-}

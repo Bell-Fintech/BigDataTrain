@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入spring的约束文件dtd文件 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+  <!--  
+  <bean id="userDao" class="cn.edu360.spring.dao.impl.UserDaoImpl"></bean>  
+      
+  <bean id="userService" class="cn.edu360.spring.service.impl.UserServiceImpl">
+  <property name="userDao"  ref="userDao"></property>
+  </bean> -->
+  <!-- bean对象的三种实例化方式
+  1:无参构造
+  2:有参构造(注意:如果类当中只有有参构造方法的话，那么就必须的使用有参构造的配置写法)
+  3:通过静态工厂类
+  
+   --> 
+   <!-- <bean id="user" class="cn.edu360.spring.model.User">
+   <constructor-arg index="0" type="java.lang.Integer" value="1"></constructor-arg>
+   <constructor-arg index="1" type="java.lang.String" value="张三"></constructor-arg>
+   <constructor-arg index="2" type="java.lang.String" value="123456"></constructor-arg>
+   </bean>
+   
+   <bean id="user1" class="cn.edu360.spring.factory.UserFactory" factory-method="getUser"></bean> -->
+   <!-- 附件扫描，会扫描指定包路径下面的注解(Contrller、service等注解) -->
+   <context:component-scan base-package="cn.edu360.spring">
+   <!-- 让附件扫描器不去扫描 Controller注解 -->
+   <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+   
+   </context:component-scan>   
+</beans>

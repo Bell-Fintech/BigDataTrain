@@ -22,6 +22,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="cn.edu360"/>
+			<item value="yPrimaryKey(Integer ordersId);"/>
 			<item value="cn.edu360.sm"/>
 			<item value="cn."/>
 			<item value="zd"/>

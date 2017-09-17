@@ -1,7 +1,0 @@
-package zd.service;
-
-import zd.model.Post;
-
-public interface PostService {
-	public Post findPostsByOrdersId(int id);
-}

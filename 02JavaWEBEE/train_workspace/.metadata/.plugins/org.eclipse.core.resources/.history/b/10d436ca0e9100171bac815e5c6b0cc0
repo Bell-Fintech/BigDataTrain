@@ -1,5 +1,0 @@
-package zd.dao;
-
-public interface PostDao {
-	public Post findPostsByOrdersId();
-}

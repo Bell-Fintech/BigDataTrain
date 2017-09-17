@@ -1,8 +1,0 @@
-package zd.test;
-
-public class Test5 {
-	@Test
-public void test(){
-	
-}
-}

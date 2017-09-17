@@ -1,8 +1,0 @@
-import urllib
-#dictionary-->url ascii
-def urlencode():
-    params={'socre':100,'name':'spide_basic','comment':'good'}
-    qs=urllib.urlencode(params)
-    print(qs)
-if __name__=='__main__':
-    urlencode()

@@ -1,7 +1,0 @@
-package zd.dao;
-
-import zd.model.Post;
-
-public interface PostsDao {
-	public Post findPostsByOrdersId(int id);
-}
