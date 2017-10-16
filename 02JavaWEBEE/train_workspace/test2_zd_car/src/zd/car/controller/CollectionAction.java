@@ -1,0 +1,46 @@
+package zd.car.controller;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import zd.car.bean.Collections;
+import zd.car.bean.Items;
+import zd.car.bean.User;
+import zd.car.service.CollectionsService;
+import zd.car.service.ItemsService;
+import zd.car.service.UserService;
+import zd.car.vo.CollectionVo;
+
+@Controller
+@RequestMapping("/collection")
+public class CollectionAction {
+	
+	@Resource
+	private ItemsService itemsService;
+	
+	@Resource
+	private UserService userService;
+	
+	@Resource
+	private CollectionsService collectionsService;
+
+	@RequestMapping("/toCollection.shtml")
+	public String toCollection(Integer id,HttpSession session,HttpServletRequest request){
+		User user1 = (User)session.getAttribute("user");
+		CollectionVo cv = new CollectionVo();
+		cv.setItemsId(id);
+		cv.setUserId(user1.getId());
+		Items item = itemsService.selectByPrimaryKey(id);
+		User user = userService.selectByPrimaryKey(item.getUserId());
+		item.setCollectionsCount(collectionsService.findCount(cv));
+		Collections collection = collectionsService.selectByVo(cv);
+		request.setAttribute("user", user);
+		request.setAttribute("item", item);
+		request.setAttribute("collection", collection);
+		return "publicItems/detail";
+	}
+}

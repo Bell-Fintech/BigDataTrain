@@ -1,0 +1,12 @@
+package zd.car.dao;
+
+import java.util.List;
+
+import zd.car.base.BaseDao;
+import zd.car.bean.Parts;
+
+public interface PartsMapper extends BaseDao<Parts>{
+
+	List<Parts> findAllParts();
+    
+}
