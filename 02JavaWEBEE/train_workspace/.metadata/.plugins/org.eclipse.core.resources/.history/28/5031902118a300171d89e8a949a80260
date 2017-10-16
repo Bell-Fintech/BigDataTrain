@@ -1,0 +1,12 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.bean.Parts;
+import zd.car.base.BaseDao;
+
+public interface PartsMapper extends BaseDao<Parts>{
+
+	List<Parts> findAllParts();
+    
+}

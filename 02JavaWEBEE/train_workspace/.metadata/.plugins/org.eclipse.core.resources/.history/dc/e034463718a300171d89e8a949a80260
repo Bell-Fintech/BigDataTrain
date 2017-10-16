@@ -1,0 +1,73 @@
+package cn.lk.car.service.Impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import cn.lk.car.service.DymsnService;
+import zd.car.base.Page;
+import zd.car.bean.Dymsn;
+import zd.car.dao.DymsnMapper;
+@Service
+public class DymsnServiceImpl implements DymsnService {
+	
+	@Resource
+	private DymsnMapper dymsnMapper;
+
+	@Override
+	public int deleteByPrimaryKey(Integer id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int insert(Dymsn t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int insertSelective(Dymsn t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Dymsn selectByPrimaryKey(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int updateByPrimaryKeySelective(Dymsn t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateByPrimaryKey(Dymsn t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Dymsn> findDysmn() {
+		List<Dymsn> ds = dymsnMapper.findDysmn();
+		return ds;
+	}
+
+	@Override
+	public List<Dymsn> findByPageQuery(Page<Dymsn> page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int findTotalRowsByPageQuery(Page<Dymsn> page) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

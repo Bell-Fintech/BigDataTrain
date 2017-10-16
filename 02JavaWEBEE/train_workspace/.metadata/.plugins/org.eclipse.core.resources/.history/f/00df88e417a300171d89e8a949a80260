@@ -1,0 +1,10 @@
+package cn.lk.car.service;
+
+import cn.lk.car.base.BaseService;
+import cn.lk.car.bean.Company;
+
+public interface CompanyService extends BaseService<Company> {
+
+	Company findCompanyByName(String companyname);
+
+}

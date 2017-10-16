@@ -1,0 +1,10 @@
+package cn.lk.car.dao;
+
+import cn.lk.car.base.BaseDao;
+import cn.lk.car.bean.Company;
+
+public interface CompanyMapper extends BaseDao<Company>{
+
+	Company findCompanyByName(String companyname);
+     
+}

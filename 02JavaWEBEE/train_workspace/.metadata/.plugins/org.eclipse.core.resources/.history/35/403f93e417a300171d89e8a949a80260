@@ -1,0 +1,12 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.base.BaseDao;
+import cn.lk.car.bean.Prime;
+
+public interface PrimeMapper extends BaseDao<Prime>{
+
+	List<Prime> findAllPrime();
+    
+}

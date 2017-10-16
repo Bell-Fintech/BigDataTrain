@@ -1,9 +1,0 @@
-package controller;
-
-import org.springframework.web.servlet.ModelAndView;
-@Controller
-public class FirstController {
- public ModelAndView first(){
-	 return ;
- }
-}

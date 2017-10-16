@@ -1,0 +1,8 @@
+package cn.lk.car.dao;
+
+import cn.lk.car.bean.RoleMenuRelation;
+import zd.car.base.BaseDao;
+
+public interface RoleMenuRelationMapper extends BaseDao<RoleMenuRelation> {
+    
+}

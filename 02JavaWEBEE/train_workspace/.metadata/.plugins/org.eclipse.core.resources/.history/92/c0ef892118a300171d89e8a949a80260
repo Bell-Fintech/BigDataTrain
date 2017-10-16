@@ -1,0 +1,12 @@
+package cn.lk.car.service;
+
+import java.util.List;
+
+import cn.lk.car.bean.Dymsn;
+import zd.car.base.BaseService;
+
+public interface DymsnService extends BaseService<Dymsn> {
+
+	List<Dymsn> findDysmn();
+
+}

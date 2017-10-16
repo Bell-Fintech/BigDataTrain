@@ -1,0 +1,13 @@
+package zd.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.service.DymsnService;
+import zd.car.base.BaseDao;
+import zd.car.bean.Dymsn;
+
+public interface DymsnMapper extends BaseDao<Dymsn>{
+
+	List<Dymsn> findDysmn();
+     
+}

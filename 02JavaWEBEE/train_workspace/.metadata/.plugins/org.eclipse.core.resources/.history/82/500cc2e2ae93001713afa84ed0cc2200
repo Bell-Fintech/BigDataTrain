@@ -1,6 +1,0 @@
-package zd.vo;
-
-public class OrdersItemsVo {
-	private int ordersId;
-	private int itemsId;
-}

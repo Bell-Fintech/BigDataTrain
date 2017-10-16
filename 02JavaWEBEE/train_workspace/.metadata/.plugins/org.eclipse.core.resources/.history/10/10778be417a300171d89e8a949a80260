@@ -1,0 +1,15 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.base.BaseDao;
+import cn.lk.car.base.Page;
+import cn.lk.car.bean.Items;
+
+public interface ItemsMapper extends BaseDao<Items>{
+
+	List<Items> findByPageQuery(Page<Items> page);
+
+	int findTotalRowsByPageQuery(Page<Items> page);
+    
+}

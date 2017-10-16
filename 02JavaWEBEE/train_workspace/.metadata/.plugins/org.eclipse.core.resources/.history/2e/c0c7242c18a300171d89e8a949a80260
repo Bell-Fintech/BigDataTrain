@@ -1,0 +1,14 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import zd.car.base.BaseDao;
+import zd.car.bean.City;
+
+public interface CityMapper extends BaseDao<City>{
+
+	List<City> findAllProvinces();
+
+	List<City> findCityByParentId(int id);
+    
+}

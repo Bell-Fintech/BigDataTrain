@@ -1,0 +1,13 @@
+package cn.lk.car.service;
+
+import cn.lk.car.vo.CollectionVo;
+import zd.car.base.BaseService;
+import zd.car.bean.Collections;
+
+public interface CollectionsService extends BaseService<Collections> {
+
+	Integer findCount(CollectionVo cv);
+
+	Collections selectByVo(CollectionVo cv);
+
+}

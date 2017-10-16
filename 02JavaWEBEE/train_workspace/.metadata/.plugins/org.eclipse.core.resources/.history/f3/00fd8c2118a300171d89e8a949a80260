@@ -1,0 +1,8 @@
+package cn.lk.car.service;
+
+import cn.lk.car.bean.Menu;
+import zd.car.base.BaseService;
+
+public interface MenuService extends BaseService<Menu> {
+
+}

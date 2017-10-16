@@ -1,0 +1,15 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.bean.Notice;
+import zd.car.base.BaseDao;
+import zd.car.base.Page;
+
+public interface NoticeMapper extends BaseDao<Notice>{
+
+	List<Notice> findByPageQuery(Page<Notice> page);
+
+	int findTotalRowsByPageQuery(Page<Notice> page);
+    
+}

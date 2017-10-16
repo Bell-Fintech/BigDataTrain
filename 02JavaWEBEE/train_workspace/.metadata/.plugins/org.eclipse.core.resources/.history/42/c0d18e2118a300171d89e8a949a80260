@@ -1,0 +1,8 @@
+package cn.lk.car.service;
+
+import cn.lk.car.bean.News;
+import zd.car.base.BaseService;
+
+public interface NewsService extends BaseService<News> {
+
+}

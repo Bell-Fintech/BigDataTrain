@@ -1,0 +1,8 @@
+package cn.lk.car.service;
+
+import cn.lk.car.bean.Items;
+import zd.car.base.BaseService;
+
+public interface ItemsService extends BaseService<Items> {
+
+}

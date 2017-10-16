@@ -1,0 +1,13 @@
+package cn.lk.car.service;
+
+import cn.lk.car.base.BaseService;
+import cn.lk.car.bean.Collections;
+import cn.lk.car.vo.CollectionVo;
+
+public interface CollectionsService extends BaseService<Collections> {
+
+	Integer findCount(CollectionVo cv);
+
+	Collections selectByVo(CollectionVo cv);
+
+}

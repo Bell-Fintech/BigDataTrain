@@ -1,0 +1,26 @@
+package cn.lk.car.dao;
+
+import java.util.List;
+
+import cn.lk.car.bean.User;
+import cn.lk.car.vo.LoginVo;
+import zd.car.base.BaseDao;
+import zd.car.base.Page;
+
+public interface UserMapper extends BaseDao<User>{
+
+	User findUserByLoginNameAndPassword(LoginVo vo);
+
+	User findUserByLoginName(String loginName);
+
+	User findUserByPhone(String phone);
+
+	User findUserByEmail(String email);
+
+	User findUserByLoginNameAndEmail(User user);
+
+	List<User> findByPageQuery(Page<User> page);
+
+	int findTotalRowsByPageQuery(Page<User> page);
+	
+}

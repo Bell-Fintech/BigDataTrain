@@ -1,8 +1,0 @@
-package zd.vo;
-
-public class ItemsVo {
-private String itemsName;
-private String minPrice;
-private String maxPrice;
-
-}

@@ -1,0 +1,21 @@
+package cn.lk.car.service;
+
+import cn.lk.car.vo.LoginVo;
+import cn.lk.car.vo.RegisterVo;
+import zd.car.base.BaseService;
+import zd.car.bean.User;
+
+public interface UserService extends BaseService<User> {
+
+	User findUserByLoginNameAndPassword(LoginVo vo);
+
+	User findUserByLoginName(String loginName);
+
+	User findUserByPhone(String phone);
+
+	User findUserByEmail(String email);
+
+	void addRegister(RegisterVo vo);
+
+	User findUserByLoginNameAndEmail(User user);
+}

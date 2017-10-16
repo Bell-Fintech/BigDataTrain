@@ -1,0 +1,51 @@
+package cn.lk.car.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import zd.car.base.Page;
+import zd.car.base.Pager;
+import zd.car.bean.Brand;
+import zd.car.bean.Items;
+import zd.car.bean.Parts;
+import zd.car.service.BrandService;
+import zd.car.service.ItemsService;
+import zd.car.service.PartsService;
+
+@Controller
+@RequestMapping("/public")
+public class PublicAction {
+	@Resource
+	private BrandService brandService;
+	@Resource
+	private PartsService partsService;
+	@Resource
+	private ItemsService itemsService;
+	
+	@RequestMapping("/publicList.shtml")
+	public String publicList(Page page,Items items,HttpServletRequest request,String brandName){
+		List<Brand> brandList=brandService.findAllBrand();
+		request.setAttribute("brandList", brandList);
+		List<Parts> partsList=partsService.findAllParts();
+		request.setAttribute("partsList", partsList);
+		if(page.getPager()==null){
+			Pager pager=new Pager();
+			page.setPager(pager);
+		}
+		page.getPager().setPageSize(8);
+		page.setT(items);
+		List<Items> itemsList=itemsService.findByPageQuery(page);
+		int totalRows=itemsService.findTotalRowsByPageQuery(page);
+		page.setList(itemsList);
+		page.setTotalRows(totalRows);
+		request.setAttribute("brandName", brandName);
+		request.setAttribute("page", page);
+		return "publicItems/publicList";
+	}
+
+}

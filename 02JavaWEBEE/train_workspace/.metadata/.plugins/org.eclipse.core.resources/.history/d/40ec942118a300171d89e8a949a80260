@@ -1,0 +1,8 @@
+package cn.lk.car.dao;
+
+import cn.lk.car.bean.Role;
+import zd.car.base.BaseDao;
+
+public interface RoleMapper extends BaseDao<Role>{
+    
+}

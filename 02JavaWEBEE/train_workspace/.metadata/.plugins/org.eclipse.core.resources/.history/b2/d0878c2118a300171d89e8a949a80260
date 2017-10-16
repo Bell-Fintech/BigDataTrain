@@ -1,0 +1,8 @@
+package cn.lk.car.dao;
+
+import cn.lk.car.bean.Menu;
+import zd.car.base.BaseDao;
+
+public interface MenuMapper extends BaseDao<Menu>{
+    
+}

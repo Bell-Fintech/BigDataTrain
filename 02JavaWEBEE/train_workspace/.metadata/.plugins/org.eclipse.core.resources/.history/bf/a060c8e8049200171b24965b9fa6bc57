@@ -1,8 +1,0 @@
-package cn.edu360.mybatis.dao;
-
-import cn.edu360.mybatis.base.BaseDao;
-import cn.edu360.mybatis.model.Post;
-
-public interface PostMapper extends BaseDao<Post> {
-   
-}

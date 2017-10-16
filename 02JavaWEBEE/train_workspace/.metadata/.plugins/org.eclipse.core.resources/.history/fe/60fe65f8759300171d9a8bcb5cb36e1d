@@ -1,5 +1,0 @@
-package zd.service;
-
-public interface ItemsService {
- public List<Items> findItemsByVo(ItemsVo vo);
-}

@@ -1,0 +1,13 @@
+package cn.lk.car.dao;
+
+import cn.lk.car.vo.CollectionVo;
+import zd.car.base.BaseDao;
+import zd.car.bean.Collections;
+
+public interface CollectionsMapper extends BaseDao<Collections>{
+
+	Integer findCount(CollectionVo cv);
+
+	Collections selectByVo(CollectionVo cv);
+    
+}

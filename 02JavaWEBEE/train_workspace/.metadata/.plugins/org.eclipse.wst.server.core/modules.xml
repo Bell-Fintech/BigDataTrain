@@ -10,4 +10,5 @@
   <module moduleId="org.eclipse.jst.jee.server:WEB09" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:MVC" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:EEMS" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:test2_zd_car" serverId="Tomcat v8.0 Server at localhost"/>
 </modules>
