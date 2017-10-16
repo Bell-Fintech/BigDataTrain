@@ -1,0 +1,20 @@
+关于系统的session拦截和权限拦截
+    session拦截,将系统的所有url进行分类,有一部分是不需要登录就可以访问的
+    /toLogin.shtml   /login.shtml  /toRegister.shtml   /register.shtml
+    /register/*.shtml注册校验
+    除此之外，都通过session的拦截器来拦截
+    权限拦截,将系统的所有url进行分类,有一部分是不需要拦截就可以访问的
+    /toLogin.shtml   /login.shtml  /toRegister.shtml   /register.shtml
+    /register/*.shtml注册校验.
+
+    除此之外，需要自定义权限的拦截器来进行拦截(filter、springmvc interceptor,Spring Aop)
+    用户登录之后，通过角色、角色权限关系表、菜单权限表，查询出该用户所具有的
+    菜单权限,将权限列表存到session域当中.
+    用户每次请求资源的时候，先判断该资源是否是需要被拦截的资源,如果需要被拦截
+    取到用户的请求的资源路径和session当中存放的权限列表的url进行比对,一旦包括
+    其中，就意味着可以放行了；否则的话，重定向到非法页面.
+    对每个导航菜单及子url进行分类管理，找到公共的权限标示存到数据库,
+    拦截的时候，只要判断一下，请求的url是否含有权限标示即可.
+
+关于系统的缓存处理
+    缓存方面  mybatis提供了缓存功能

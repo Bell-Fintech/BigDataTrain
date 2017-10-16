@@ -1,0 +1,18 @@
+springmvc有两种开发方式
+      1：不使用注解(大量的xml的配置文件)
+      2：使用注解(比较简单，开发比较便捷)
+
+非注解的开发模式：
+     1：导入jar包到webroot/WEB-INF/lib下，并且添加进buildpath
+     2:  配置web.xml，配置dispatcherServlt（引入一个springmvc的核心配置文件）
+     3:  配置springmvc的核心配置文件(使用spring的约束)
+     4:  创建java类，实现controller接口，手写handleRequest方法的实现
+     5： 在springmvc的核心配置文件当中，使用bean标签，bean标签的name属性
+         的值就是该处理器的访问路径,
+
+springmvc的工作流程
+     如图
+
+关于注解的开发模式：
+    
+      

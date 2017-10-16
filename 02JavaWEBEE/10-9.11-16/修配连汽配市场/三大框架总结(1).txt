@@ -1,0 +1,55 @@
+mybatis的特点以及工作流程
+       mybatis是一个轻量级的orm框架，底层封装的是jdbc，通过mapper映射文件
+       手写sql语句，实现了结果集和pojo的自动映射。mybatis非常灵活，对sql的
+       支持较好(相对于hibernate来说)
+       mybatis通过核心配置文件，配置数据源以及引入mapper文件。通过核心配置文件创建一个sqlSessionfactory对象，然后通过sqlSessionFactory开启一个sqlSession.通过sqlSession对数据库进行增删改查,mybatis进行增删改的时候，必须得手动提交事务。
+hibernate和mybatis有什么区别?
+       hibernate是一个全自动封装的orm框架，封装的jdbc，通过HQL语句操作数据库。hibernate支持多种数据库的方言,可以极大的提高开发效率.但是hibernate对多表关联查询的支持不太好，不如mybatis灵活。
+    
+你用过哪些mvc的框架？它们有什么特点?
+     springmvc是spring旗下的一个模块,是一个封装sevlet层的框架.它通过
+     核心控制器dispatcherServlet会拦截指定后缀的请求,然后去查找handlerMapping看是否有满足路径的处理器,dispatcherServlet会调用
+     handlerAdpter进行参数的绑定工作.handler执行业务逻辑方法,
+     返回一个modelAndview对象给dispatcherServlet，dispatcherServlet会调用
+     viewResolver进行解析，渲染响应给客户端.
+springmvc有哪些常用注解:
+     Controller 表示这是处理器
+     RequestMapping配置方法的映射请求路径
+     requestParam  参数映射
+     requestBody   将请求当中的json转换为对象
+     responseBody   请响应的对象转换为json
+     pathVariable   获取restful URL当中的参数
+组件配置:
+    注解驱动  包含注解的处理器映射器和处理器适配器
+    部件扫描   扫描指定包路径下面的注解(扫描controller注解)
+    视图解析器  默认使用jsp的视图解析器(配置前缀和后缀)
+
+struts2是一个apache出品的mvc框架.它通过核心的过滤器
+preparedAndExcuteStrutsFilter对指定后缀的请求进行拦截,
+经过拦截器链的处理,动态创建action的实例（struts2是oop的设计思想,
+会将请求的参数映射到类的属性当中.
+
+springMvc和struts2有什么区别?
+springmvc是面向方法的设计思想，把处理器之前所有的准备工作都封装完了，
+程序员只需要关注于处理器的方法的实现。springmvc的核心控制器是一个
+servlet，每一个处理器都是单实例的.
+strust2是面向对象的设计思想,程序员需要关注于每一个action的开发,包括了
+属性的声明.struts2的核心控制器是一个filter，每一次请求都会动态的创建一个action。
+
+你用过spring吧，spring有什么特点?
+    spring是一个一站式的j2ee框架，它在项目当中充当一个粘合剂的作用.
+    spring有2大核心功能,IOC和AOP.
+    IOC称为控制反转,通常我们在项目当中需要手动new一个对象，现在呢，我们
+    把对象的创建和管理权力反转给spring容器,DI称为依赖注入，spring容器
+    会根据对象之间的依赖关系,完成对象的注入工作.spring的ioc是spring框架的核心功能,applicationContext和beanFatory是ioc的两大核心接口.
+
+    AOP称为面向切面编程,我们在项目当中主要使用aop做事务管理、日志管理等功能.spring的aop是基于动态代理来实现的，通过配置文件pointcut设置一个切面，当项目当中使用到这个切面(表达式)的方法时,aop框架就会拦截到,创建基于jdk或者cglib的动态代理对象,在invoke方法内部，进行前置增强、后置增强、环绕增强等.
+
+你用过哪些spring的注解
+    @controller @service @reponsitory @component
+    @autoWired 根据类型去容器当中查找，再注入
+    jdk的@resource注解 先根据对象的名称去容器中查找，如果没找到，会根据类型去查找
+
+
+
+

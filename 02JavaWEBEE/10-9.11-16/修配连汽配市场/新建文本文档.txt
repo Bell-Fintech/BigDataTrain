@@ -1,0 +1,13 @@
+ 1   html 的基本标签   属性  
+ 2  css   选择器   布局    浮动
+ 3 js   基本语法 （数据类型  流程控制） 事件  事件的绑定  dom获取元素     获取元素的数据 
+ 4 jQuery  选择器   事件  事件绑定   一些常用的方法  html（）  text()   appened()
+ 5 bootstrap   会复制
+ 6  数据库   增删改查  单表   多表（sql）加强
+ 7 jdbc  步骤    配置文件   连接池 dbcp  c3p0   dbUtils beanUtils  
+ 8 servlet   config  context  request  response  cookie session  
+      9 从页面向服务器  请求   携带数据   服务器 接收数据   jdbc（数据）  怎么想页面展示
+10 jsp  展示数据	  内置对象（掌握常用的   四大域对象） 
+11 ajax
+
+ 
